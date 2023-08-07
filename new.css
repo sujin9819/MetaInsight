@@ -1,0 +1,123 @@
+h1 a {
+    color: #13192b;
+    font-family: 'Lobster';
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+h1 {
+    float: left;
+    max-width: 1200px;   
+}
+
+header, footer {
+    background-color: #ffffff;
+    overflow: auto;
+    margin: auto;
+    color: #000000;
+}
+footer{
+    border-top: 1px solid #000000;
+}
+
+div.sub, div.page_footer {
+    overflow: auto;
+    max-width: 1200px;
+    margin: auto;
+    color: #000000;
+}
+div.col-9, div.col-3, div.col-12{
+    padding-top: 15px ;
+}
+
+div.col-3{
+    width:25%;
+    float: left;
+}
+
+div.col-9{
+    width: 75%;
+    float: left;
+}
+div.col-12{
+    width: 100%;
+    float: right;
+}
+
+div.page_content {
+    max-width: 1210px;
+    min-height: 800px;
+    margin: auto auto;
+    text-align: left;
+    flex-grow: 2;
+    padding:25px 0px 0px 25px;
+}
+
+div.ct_block {
+    padding: 30px 20px;
+    background-color: #ffffff;
+    margin: 0px 15px 15px 25px;
+}
+
+div.page_wrap{
+    background-color: #f0f0f0;
+}
+
+div.form_box{
+    float:right;
+    padding: 10px;
+}
+
+header.main {
+    background-color: #ffffff;
+    overflow: auto;
+    max-width: 1200px;
+    height: 112 pt;
+    font-size: 30 pt;
+}
+
+nav#nav a {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 5px 20px;
+    color: #000000;
+    font-weight: 1000;
+    font-size: 11pt;
+    margin: 0px;
+    text-decoration-line: none;
+    border-left: 1px solid #bcbcbc;
+}
+
+nav#nav a:hover {
+    text-decoration: none;
+    background-color: #d2d2d2;
+}
+
+nav#nav {
+    line-height: 50%;
+}
+
+header.sub {
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+
+
+
+form{
+    line-height: 50%;
+    margin:2px;
+    padding:5px;
+}
+
+
+
+body {
+    font-size: 12px;
+    color: #000000;
+}

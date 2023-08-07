@@ -1,0 +1,97 @@
+
+<html>
+    <head>
+        <title>META INSIGHT</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="new.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!--header-->
+        <header class="main">
+            <!--logo-->
+                <h1><a href="index.html" id="logo"><img alt="LOGO" src="./../../static/image/logo.PNG" width="50px">META INSIGHT</a></h1>
+        </header>
+        <header class="sub">
+            <div class="sub">
+                <!--Nav-->
+                <nav id="nav">
+                    <a href="About.html">ABOUT US</a>
+                    <a href="protocol_base.html">PROTOCOLS</a>
+                    <a href="Genome.html">GENOME CATALOG</a>
+                    <a href="Gene.html">GENE CATALOG</a>
+                    <a href="Blast.html">BLAST</a>
+                    <a href="Samples.html" style="border-right: 1px solid #bcbcbc">SAMPLES</a>
+                    <!--search-->
+                    <div class="form_box">
+                        <form method="get" action="/search.html" id="searchForm">
+                            <input type="text" id="search" name="search" value="">
+                            <input type="image" id="filterImage" name="submit" src="./../../static/image/search.svg" alt="Search" title="Search" height="21pt">
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </header>    
+        <!--content-->    
+        <div class="page_wrap" style="background-color: #f0f0f0;">
+            <div class="page_content" >
+                <div class="row">
+                    <div class="col-12">
+                        <div class="ct_block">
+                            <br>
+                            <br>
+                            <br>
+                            <h2> MetaInsight ;  </h2>
+                            <p>해당 사이트에 대한 내용 및 설명 작성</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <br>
+                            <h2> PROTOCOLS ;  </h2>
+                            <p> protocol 페이지에 대한 설명</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <br>
+                            <h2> GENOME/GENE CATALOG ;  </h2>
+                            <p> genome/gene catalog 페이지에 대한 설명. </p>
+                            <br>
+                            <hr>
+                            <br>
+                            <br>                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!--footer-->
+        <footer id="footer-wrap">
+            <div class="page_footer">
+                <div class="footer_links">
+                    <a href="About.html">License &amp; Citation</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="footer_logos">
+                    <a href="https://www.gnu.ac.kr/main/main.do" target="_blank" rel="noopener">
+                        <img alt="GNU" id ="GNUlogo" src="./../../static/image/GNU2.jpg" height="60px">
+                    </a>
+                    <a href="https://www.msit.go.kr/index.do" target="_blank" rel="noopener">
+                        <img alt="Ministry of Science and ICT" id="MSITlogo" src="./../../static/image/msit.PNG" height="60px">
+                    </a>
+                    <a href="https://www.scilifelab.se/" target="_blank" rel="noopener">
+                        <img alt="Yonsei Univ" id="Yonseilogo" src="./../../static/image/Yonsei.jpg" height="60px">
+                    </a>
+                </div>
+                <div class="version_info">
+                    Version 1<br>
+                    Released 2023-$$-$$
+                </div>
+            </div>
+            
+        </footer>
+    </body>
+    
+</html>
