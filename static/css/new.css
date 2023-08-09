@@ -49,11 +49,11 @@ div.col-12{
 
 div.page_content {
     max-width: 1210px;
-    min-height: 800px;
+    min-height: 1500px;
     margin: auto auto;
     text-align: left;
     flex-grow: 2;
-    padding:25px 0px 0px 25px;
+    padding:25px 0px 0px 0px;
 }
 
 div.ct_block {
@@ -64,6 +64,7 @@ div.ct_block {
 
 div.page_wrap{
     background-color: #f0f0f0;
+    min-height: 1000px;
 }
 
 div.form_box{
@@ -106,9 +107,14 @@ header.sub {
     border-bottom: 1px solid #bcbcbc;
 }
 
+ul, ol{
+    padding-inline-start: 10pt;
+}
 
-
-
+ul a, ol a{
+    color: #000000;
+    text-decoration: underline;
+}
 form{
     line-height: 50%;
     margin:2px;
