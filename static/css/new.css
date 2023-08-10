@@ -98,10 +98,6 @@ nav#nav a:hover {
     background-color: #d2d2d2;
 }
 
-nav#nav {
-    line-height: 50%;
-}
-
 header.sub {
     border-top: 1px solid #bcbcbc;
     border-bottom: 1px solid #bcbcbc;
