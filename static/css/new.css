@@ -24,7 +24,7 @@ footer{
 }
 
 div.sub, div.page_footer {
-    overflow: auto;
+    overflow: hidden;
     max-width: 1200px;
     margin: auto;
     color: #000000;
@@ -82,10 +82,11 @@ header.main {
 
 nav#nav a {
     height: 70px;
+    inline-height: 70px;
     padding: 5px 20px;
     color: #000000;
     font-weight: 1000;
-    font-size: 14px;
+    font-size: 15px;
     margin: 0px;
     text-decoration-line: none;
     border-left: 1px solid #bcbcbc;
