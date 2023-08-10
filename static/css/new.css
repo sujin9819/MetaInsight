@@ -81,6 +81,7 @@ header.main {
 }
 
 nav#nav a {
+    display: inline-block;
     height: 70px;
     inline-height: 70px;
     padding: 5px 20px;
