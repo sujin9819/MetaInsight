@@ -82,8 +82,8 @@ header.main {
 
 nav#nav a {
     display: inline-block;
-    height: 64px;
-    line-height: 64px;
+    height: 60px;
+    line-height: 60px;
     padding: 5px 20px;
     color: #000000;
     font-weight: 1000;
