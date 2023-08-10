@@ -82,8 +82,8 @@ header.main {
 
 nav#nav a {
     display: inline-block;
-    height: 58px;
-    line-height: 58px;
+    height: 65px;
+    line-height: 65px;
     padding: 5px 20px;
     color: #000000;
     font-weight: 1000;
@@ -105,6 +105,7 @@ nav#nav {
 header.sub {
     border-top: 1px solid #bcbcbc;
     border-bottom: 1px solid #bcbcbc;
+    height: 70px;
 }
 
 ul, ol{
