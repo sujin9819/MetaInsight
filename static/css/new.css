@@ -1,6 +1,7 @@
 h1 a {
     color: #13192b;
-    font-family: 'Lobster';
+    font-family: 'Lobster'
+    font-size: 36px;
 }
 
 a {
@@ -21,6 +22,12 @@ header, footer {
 }
 footer{
     border-top: 1px solid #000000;
+}
+header.main {
+    background-color: #ffffff;
+    overflow: auto;
+    max-width: 1200px;
+    height: 112 px;
 }
 
 div.sub, div.page_footer {
@@ -70,14 +77,6 @@ div.page_wrap{
 div.form_box{
     float:right;
     padding: 10px;
-}
-
-header.main {
-    background-color: #ffffff;
-    overflow: auto;
-    max-width: 1200px;
-    height: 112 px;
-    font-size: 30 px;
 }
 
 nav#nav a {
