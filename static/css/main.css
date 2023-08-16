@@ -1,0 +1,147 @@
+
+h1 {
+    font-size: 30px;
+}
+
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+div {
+    overflow: auto;
+}
+
+
+header, div#footer-wrap {
+    background-color: #ffffff;
+    overflow: auto;
+    margin: auto;
+    color: #000000;
+}
+div#footer-wrap{
+    border-top: 1px solid #bcbcbc;
+    padding-top: 5px;
+    height: 112px;
+}
+
+div.sub, div.page_footer {
+    overflow: auto;
+    max-width: 1200px;
+    margin: auto;
+    color: #000000;
+}
+div.col-9, div.col-3, div.col-12{
+    padding-top: 15px ;
+}
+
+div.col-3{
+    width:25%;
+    float: left;
+}
+
+div.col-9{
+    width: 75%;
+    float: left;
+}
+div.col-12{
+    width: 100%;
+    float: right;
+}
+
+div.page_content {
+    max-width: 1210px;
+    height: auto;
+    margin: auto auto;
+    text-align: left;
+    flex-grow: 2;
+    padding:25px 0px 25px 0px;
+    overflow: auto;
+}
+
+
+div.ct_block {
+    padding: 30px 20px;
+    background-color: #ffffff;
+    margin: 0px 15px 15px 25px;
+}
+
+div.page_wrap{
+    overflow: auto;
+    background-color: #f0f0f0;
+}
+
+div.form_box{
+    float:right;
+    padding: 10px;
+}
+
+div.code_box{
+    background-color: #F7F6F3;
+    color: #656565;
+    padding: 15px 30px 15px 30px;
+    font-family: 'Consolas';
+    width: 80%;
+}
+
+header.main {
+    background-color: #ffffff;
+    overflow: auto;
+    max-width: 1200px;
+    height: 112 px;
+    font-size: 30 px;
+}
+
+nav#nav a {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 5px 20px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px;
+    text-decoration-line: none;
+    border-left: 1px solid #bcbcbc;
+}
+
+nav#nav a:hover {
+    text-decoration: none;
+    background-color: #d2d2d2;
+}
+
+nav#nav {
+    line-height: 50%;
+}
+
+header.sub {
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+ul, ol{
+    padding-inline-start: 10px;
+}
+
+ul a, ol a{
+    color: #000000;
+}
+ul a:hover, ol a:hover{
+    text-decoration: underline;
+}
+form{
+    line-height: 50%;
+    margin:2px;
+    padding:5px;
+}
+
+figure{
+    text-align:center;
+}
+
+
+body {
+    font-size: 12px;
+    color: #000000;
+}
