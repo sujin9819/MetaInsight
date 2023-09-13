@@ -21,7 +21,7 @@ header, div#footer-wrap {
     color: #000000;
 }
 div#footer-wrap{
-    border-top: 1px solid #3d5583;
+    border-top: 1px solid #bcbcbc;
     padding-top: 5px;
     height: 112px;
 }
@@ -32,11 +32,6 @@ div.sub, div.page_footer {
     margin: auto;
     color: #000000;
 }
-
-div.footer_logos{
-    float: right;
-}
-
 div.col-9, div.col-3, div.col-12{
     padding-top: 15px ;
 }
@@ -70,22 +65,11 @@ div.ct_block {
     padding: 30px 20px;
     background-color: #ffffff;
     margin: 0px 15px 15px 25px;
-    border: 1px solid #3d5583;
-}
-
-div.main_ct_block {
-    padding: 30px 20px;
-    background-color: rgba(255, 255, 255, 0.85);
-    margin: 0px 15px 15px 25px;
-    border: 1px solid #3d5583;
-    color: #3d5583;
 }
 
 div.page_wrap{
     overflow: auto;
-    background-image:url('./../image/bg_png.png') ;
-    background-attachment: fixed;  
-    background-size: cover;
+    background-color: #f0f0f0;
 }
 
 div.form_box{
@@ -115,15 +99,16 @@ nav#nav a {
     line-height: 50px;
     padding: 5px 20px;
     color: #000000;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 14px;
     margin: 0px;
     text-decoration-line: none;
+    border-left: 1px solid #bcbcbc;
 }
 
 nav#nav a:hover {
     text-decoration: none;
-    background-color: #6799D1;
+    background-color: #d2d2d2;
 }
 
 nav#nav {
@@ -131,7 +116,8 @@ nav#nav {
 }
 
 header.sub {
-    background-color: #CFDFF2;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
 }
 
 ul, ol{
