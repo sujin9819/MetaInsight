@@ -21,8 +21,9 @@ header, div#footer-wrap {
     color: #000000;
 }
 div#footer-wrap{
+    border-top: 1px solid #3d5583;
     padding-top: 5px;
-    height: 85px;
+    height: 112px;
 }
 
 div.sub, div.page_footer {
@@ -69,12 +70,14 @@ div.ct_block {
     padding: 30px 20px;
     background-color: #ffffff;
     margin: 0px 15px 15px 25px;
+    border: 1px solid #3d5583;
 }
 
 div.main_ct_block {
     padding: 20px 35px;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.85);
     margin: 0px 15px 15px 25px;
+    border: 1.5px solid #3d5583;
     color: #3d5583;
 }
 
@@ -129,6 +132,8 @@ nav#nav {
 
 header.sub {
     background-color: #CFDFF2;
+    border-top: 1px solid #3d5583;
+    border-bottom: 1px solid #3d5583;
 }
 
 ul, ol{
