@@ -52,6 +52,6 @@ $ conda deactivate
 | METABAT2 | `conda create –n MetaBAT2 -c bioconda MetaBAT2` | https://anaconda.org/bioconda/MetaBAT2 |
 | BBMAP | `conda create –n bbmap -c bioconda bbmap` | https://anaconda.org/bioconda/bbmap |
 | SAMTOOLS | `conda create –n samtools -c bioconda samtools` | https://anaconda.org/bioconda/samtools |
-| CHECKM | `conda create -n CheckM python=3.9`	`conda activate CheckM`	`conda install -c bioconda numpy matplotlib pysam`	`conda install -c bioconda hmmer prodigal pplacer`	`pip3 install CheckM-genome` | https://anaconda.org/bioconda/CheckM-genome |
+| CHECKM | `conda create -n CheckM python=3.9` <br> `conda activate CheckM` <br>`conda install -c bioconda numpy matplotlib pysam`<br>`conda install -c bioconda hmmer prodigal pplacer`<br>`pip3 install CheckM-genome` | https://anaconda.org/bioconda/CheckM-genome |
 | GTDB-TK | `conda create -n gtdbtk-2.1.1 -c conda-forge -c bioconda gtdbtk=2.1.1` | https://anaconda.org/bioconda/gtdbtk |
 | PHYLOPHLAN3 | `conda create –n phylophlan -c bioconda phylophlan` | https://anaconda.org/bioconda/phylophlan |
