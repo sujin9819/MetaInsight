@@ -26,26 +26,141 @@
 <table>
 <thead>
   <tr>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-    <th>4</th>
+    <th>Category</th>
+    <th>Tools</th>
+    <th>Description</th>
+    <th>Year</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="3"></td>
+    <td rowspan="3">Trimming</td>
+    <td>[cutadapt][""]</td>
+    <td>5' adaptor trimming 가능</td>
+    <td>2011</td>
+  </tr>
+  <tr>
+    <td>[TrimGalore][""]</td>
+    <td>cutadapt기반의 trimming 프로그램<br>paired-end trimming가능</td>
+    <td>2013</td>
+  </tr>
+  <tr>
+    <td>[trimmomatic][""]</td>
+    <td>Paired-end trimming 가능</td>
+    <td>2014</td>
+  </tr>
+  <tr>
+    <td rowspan="5"></td>
+    <td>[bowtie2][""]</td>
+    <td></td>
+    <td>2012</td>
+  </tr>
+  <tr>
+    <td>[BWA][""]</td>
+    <td></td>
+    <td>2009</td>
+  </tr>
+  <tr>
+    <td>[HiSat2][""]</td>
     <td>d</td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td>[STAR][""]</td>
+    <td>d</td>
+    <td>2013</td>
+  </tr>
+  <tr>
+    <td>[TopHat2][""]</td>
+    <td></td>
+    <td>2013</td>
+  </tr>
+  <tr>
+    <td rowspan="6">DE analysis</td>
+    <td>[Cuffdiiff2][""]</td>
+    <td>cufflink 연계 tool. sam(bam)파일을 이용하여 gene, isoform 수준에서 발현 비교 </td>
+    <td>2013</td>
+  </tr>
+  <tr>
+    <td>[DESeq2][""]</td>
+    <td></td>
+    <td>2014</td>
+  </tr>
+  <tr>
+    <td>[EdgeR][""]</td>
+    <td>d</td>
+    <td>2010</td>
+  </tr>
+  <tr>
+    <td>[limma][""]</td>
+    <td>d</td>
+    <td>2015</td>
+  </tr>
+  <tr>
+    <td>[NOISeq][""]</td>
+    <td></td>
+    <td>2011</td>
+  </tr>
+  <tr>
+    <td>[SAMSeq][""]</td>
+    <td>d</td>
+    <td>2013</td>
+  </tr>
+  <tr>
+    <td rowspan="3"><em>de novo</em> assembly</td>
+    <td>[][""]</td>
     <td>d</td>
     <td>d</td>
   </tr>
   <tr>
-    <td></td>
+    <td>[][""]</td>
     <td></td>
     <td>d</td>
   </tr>
   <tr>
+    <td>[][""]</td>
+    <td>d</td>
     <td></td>
+  </tr>
+  <tr>
+    <td rowspan="4">Taxonomy assignment</td>
+    <td>[][""]</td>
+    <td>d</td>
+    <td>d</td>
+  </tr>
+  <tr>
+    <td>[][""]</td>
+    <td></td>
+    <td>d</td>
+  </tr>
+  <tr>
+    <td>[][""]</td>
+    <td>d</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>[][""]</td>
+    <td>d</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="4">Format transition</td>
+    <td>[][""]</td>
+    <td>d</td>
+    <td>d</td>
+  </tr>
+  <tr>
+    <td>[][""]</td>
+    <td></td>
+    <td>d</td>
+  </tr>
+  <tr>
+    <td>[][""]</td>
+    <td>d</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>[][""]</td>
     <td>d</td>
     <td></td>
   </tr>
