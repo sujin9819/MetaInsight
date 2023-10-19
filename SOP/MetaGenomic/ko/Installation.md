@@ -7,8 +7,7 @@
 - Binning : MetaBAT2, BBmap, minimap2, samtools, CheckM
 - Phylogenetic tree construction : GTDB-tk, PhyloPhlAn3
 
-![메타유전체 분석 파이프라인](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_4_1.png?raw=true){: width="100%"}
-<img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_4_1.png?raw=true" width="100%>
+![메타유전체 분석 파이프라인](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_4_1.png?raw=true)
 > 메타유전체 분석 파이프라인
 
 # Installation
