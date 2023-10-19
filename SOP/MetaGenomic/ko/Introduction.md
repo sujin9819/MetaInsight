@@ -1,19 +1,18 @@
-# NGS±â¹Ý ¸¶ÀÌÅ©·Î¹ÙÀÌ¿È À¯ÀüÃ¼ ºÐ¼® SOP
+# NGSê¸°ë°˜ ë§ˆì´í¬ë¡œë°”ì´ì˜´ ìœ ì „ì²´ ë¶„ì„ SOP
 
 
-## ¸ÞÅ¸À¯ÀüÃ¼ (Metagenome) °³¿ä
+## ë©”íƒ€ìœ ì „ì²´ (Metagenome) ê°œìš”
 
-### ÀÌ¹ÌÁö Ã·ºÎ
 
 ![Metagenomics overview](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_0_1.png?raw=true)
 <center> Metagenomics overview</center>  
 
-¸ÞÅ¸À¯ÀüÃ¼(metagenome)¶õ ´Ù¾çÇÑ È¯°æ ½Ã·á(µ¿¹°, ½Ä¹°, ÇØ¾ç µî)¿¡ Á¸ÀçÇÏ´Â À¯ÀüÀû ¹°ÁúÀÇ ÃÑÃ¼¸¦ ÀÇ¹ÌÇÑ´Ù.
-¸ÞÅ¸À¯ÀüÃ¼ ºÐ¼®Àº Æ¯Á¤ È¯°æ »ýÅÂ°è¿¡ Á¸ÀçÇÏ´Â ¸ðµç »ý¸íÃ¼µéÀÇ À¯ÀüÀû Á¤º¸¸¦ ÃßÃâÇÏ¿© ºÐ¼®ÇÑ´Ù.
-¸ÞÅ¸À¯ÀüÃ¼ ÀÌÀü¿¡, ¹Ì»ý¹° À¯ÀüÃ¼ ºÐ¼®Àº ¹è¾ç°¡´ÉÇÑ ¹Ì»ý¹°ÀÇ À¯ÀüÃ¼¸¸ ºÐ¼®ÀÌ °¡´ÉÇÏ¿´´Ù.
-ÇÏÁö¸¸ Æ¯Á¤È¯°æ¿¡ Á¸ÀçÇÏ´Â ¹Ì»ý¹° µé Áß ¹è¾ç°¡´ÉÇÑ ¹Ì»ý¹°µéÀº ±ØÈ÷ ÀÏºÎÀÌ±â ¶§¹®¿¡, ÀÌ·¯ÇÑ Á¢±Ù¹ýÀº ÀÏºÎ ¹è¾ç °¡´ÉÇÑ ¹Ì»ý¹° Áß½ÉÀÇ ÆíÇâµÈ Á¤º¸¸¦ °®°Ô ÇÑ´Ù.
-ÇÏÁö¸¸ ¸ÞÅ¸À¯ÀüÃ¼ ºÐ¼®À» ÅëÇØ¼­´Â È¯°æ¿¡ Á¸ÀçÇÏ´Â À¯ÀüÃ¼ ÃÑÃ¼¿¡ ´ëÇØ ºÐ¼®ÇÏ±â ¶§¹®¿¡ Æ¯Á¤ »ýÅÂ°è¿¡ ´ëÇØ º¸´Ù Á¤È®ÇÑ ÀüÃ¼ÀûÀÎ ±×¸²À» ±×¸± ¼ö ÀÖ°Ô µÈ´Ù.
+ë©”íƒ€ìœ ì „ì²´(metagenome)ëž€ ë‹¤ì–‘í•œ í™˜ê²½ ì‹œë£Œ(ë™ë¬¼, ì‹ë¬¼, í•´ì–‘ ë“±)ì— ì¡´ìž¬í•˜ëŠ” ìœ ì „ì  ë¬¼ì§ˆì˜ ì´ì²´ë¥¼ ì˜ë¯¸í•œë‹¤.
+ë©”íƒ€ìœ ì „ì²´ ë¶„ì„ì€ íŠ¹ì • í™˜ê²½ ìƒíƒœê³„ì— ì¡´ìž¬í•˜ëŠ” ëª¨ë“  ìƒëª…ì²´ë“¤ì˜ ìœ ì „ì  ì •ë³´ë¥¼ ì¶”ì¶œí•˜ì—¬ ë¶„ì„í•œë‹¤.
+ë©”íƒ€ìœ ì „ì²´ ì´ì „ì—, ë¯¸ìƒë¬¼ ìœ ì „ì²´ ë¶„ì„ì€ ë°°ì–‘ê°€ëŠ¥í•œ ë¯¸ìƒë¬¼ì˜ ìœ ì „ì²´ë§Œ ë¶„ì„ì´ ê°€ëŠ¥í•˜ì˜€ë‹¤.
+í•˜ì§€ë§Œ íŠ¹ì •í™˜ê²½ì— ì¡´ìž¬í•˜ëŠ” ë¯¸ìƒë¬¼ ë“¤ ì¤‘ ë°°ì–‘ê°€ëŠ¥í•œ ë¯¸ìƒë¬¼ë“¤ì€ ê·¹ížˆ ì¼ë¶€ì´ê¸° ë•Œë¬¸ì—, ì´ëŸ¬í•œ ì ‘ê·¼ë²•ì€ ì¼ë¶€ ë°°ì–‘ ê°€ëŠ¥í•œ ë¯¸ìƒë¬¼ ì¤‘ì‹¬ì˜ íŽ¸í–¥ëœ ì •ë³´ë¥¼ ê°–ê²Œ í•œë‹¤.
+í•˜ì§€ë§Œ ë©”íƒ€ìœ ì „ì²´ ë¶„ì„ì„ í†µí•´ì„œëŠ” í™˜ê²½ì— ì¡´ìž¬í•˜ëŠ” ìœ ì „ì²´ ì´ì²´ì— ëŒ€í•´ ë¶„ì„í•˜ê¸° ë•Œë¬¸ì— íŠ¹ì • ìƒíƒœê³„ì— ëŒ€í•´ ë³´ë‹¤ ì •í™•í•œ ì „ì²´ì ì¸ ê·¸ë¦¼ì„ ê·¸ë¦´ ìˆ˜ ìžˆê²Œ ëœë‹¤.
 
-½ÃÄö½Ì ±â¼úÀÇ ¹ßÀü¿¡ µû¶ó, 16S ribosomal DNA¿Í °°Àº À¯ÀüÃ¼ Æ¯Á¤ ºÎºÐÀ» Å¸°Ù ÁõÆøÇÏ¿© ½ÃÄö½ÌÇÏ´Â amplicon ½ÃÄö½ÌÀ» ³Ñ¾î¼­ ¼ö½Ê¾ï °³ÀÇ ÇÙ»ê ´ÜÆíÀ» ÇÑ²¨¹ø¿¡ ½ÃÄö½ÌÇØ³»´Â whole meatgenome shotgun sequencing¿¡ ´ëÇÑ ¿¬±¸ÀÚÀÇ Á¢±ÙÀÌ ½¬¿öÁö°í ±× ¿¬±¸ ¼ö¿ä°¡ Áõ°¡ÇÏ¿´´Ù.
-Amplicon ½ÃÄö½Ì µ¥ÀÌÅÍÀÇ °æ¿ì, QIIME2¸¦ ÀÌ¿ëÇÑ ½ºÅÄ´Ùµå ºÐ¼® ÇÁ·ÎÅäÄÝ ¹× ÇÃ·§ÆûÀÌ Á¸ÀçÇÏÁö¸¸, WMS ºÐ¼®¿¡´Â ¾ÆÁ÷±îÁø Ç¥ÁØ °ñµç½ºÅÄ´Ùµå ºÐ¼® SOPÀÌ Á¸ÀçÇÏÁö ¾Ê´Â´Ù. º» SOP¿¡¼­´Â ´Ù¾çÇÑ ºÐ¼® ÇÁ·Î±×·¥µé Áß °¡Àå º¸ÆíÀûÀ¸·Î »ç¿ëµÇ´Â Åø Áß½ÉÀ¸·Î Whole genome seuqencing (WGS) µ¥ÀÌÅÍ¸¦ ºÐ¼®ÇÏ´Â ¹æ¹ý ¹× Èå¸§¿¡ ´ëÇÏ¿© ¼­¼úÇÏ·Á ÇÑ´Ù.
+ì‹œí€€ì‹± ê¸°ìˆ ì˜ ë°œì „ì— ë”°ë¼, 16S ribosomal DNAì™€ ê°™ì€ ìœ ì „ì²´ íŠ¹ì • ë¶€ë¶„ì„ íƒ€ê²Ÿ ì¦í­í•˜ì—¬ ì‹œí€€ì‹±í•˜ëŠ” amplicon ì‹œí€€ì‹±ì„ ë„˜ì–´ì„œ ìˆ˜ì‹­ì–µ ê°œì˜ í•µì‚° ë‹¨íŽ¸ì„ í•œêº¼ë²ˆì— ì‹œí€€ì‹±í•´ë‚´ëŠ” whole meatgenome shotgun sequencingì— ëŒ€í•œ ì—°êµ¬ìžì˜ ì ‘ê·¼ì´ ì‰¬ì›Œì§€ê³  ê·¸ ì—°êµ¬ ìˆ˜ìš”ê°€ ì¦ê°€í•˜ì˜€ë‹¤.
+Amplicon ì‹œí€€ì‹± ë°ì´í„°ì˜ ê²½ìš°, QIIME2ë¥¼ ì´ìš©í•œ ìŠ¤íƒ ë‹¤ë“œ ë¶„ì„ í”„ë¡œí† ì½œ ë° í”Œëž«í¼ì´ ì¡´ìž¬í•˜ì§€ë§Œ, WMS ë¶„ì„ì—ëŠ” ì•„ì§ê¹Œì§„ í‘œì¤€ ê³¨ë“ ìŠ¤íƒ ë‹¤ë“œ ë¶„ì„ SOPì´ ì¡´ìž¬í•˜ì§€ ì•ŠëŠ”ë‹¤. ë³¸ SOPì—ì„œëŠ” ë‹¤ì–‘í•œ ë¶„ì„ í”„ë¡œê·¸ëž¨ë“¤ ì¤‘ ê°€ìž¥ ë³´íŽ¸ì ìœ¼ë¡œ ì‚¬ìš©ë˜ëŠ” íˆ´ ì¤‘ì‹¬ìœ¼ë¡œ Whole genome seuqencing (WGS) ë°ì´í„°ë¥¼ ë¶„ì„í•˜ëŠ” ë°©ë²• ë° íë¦„ì— ëŒ€í•˜ì—¬ ì„œìˆ í•˜ë ¤ í•œë‹¤.
 

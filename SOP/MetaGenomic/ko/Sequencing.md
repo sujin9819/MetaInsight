@@ -1,43 +1,43 @@
 
 # I. Preparation for sequencing
 ## [1] Biological samples
-1. ºÐº¯ Ã¤Ãë¿ë Å°Æ® (NBG-4, Noble Biosciences)ÀÇ °ËÃ¤¿ë ½ºÇ¬°ú ½ºÆÐÃô·¯¸¦ ÀÌ¿ëÇÏ¿© fecal sampleÀ» Ã¤ÃëÇÑ µÚ Àß Èçµé¾î ÁÖ¾î °ËÃ¼¸¦ ±ÕÀÏÇÏ°Ô ÇØÁØ µÚ -80¡É¿¡ º¸°üÇÑ´Ù. 
+1. ë¶„ë³€ ì±„ì·¨ìš© í‚¤íŠ¸ (NBG-4, Noble Biosciences)ì˜ ê²€ì±„ìš© ìŠ¤í‘¼ê³¼ ìŠ¤íŒ¨ì¸ŒëŸ¬ë¥¼ ì´ìš©í•˜ì—¬ fecal sampleì„ ì±„ì·¨í•œ ë’¤ ìž˜ í”ë“¤ì–´ ì£¼ì–´ ê²€ì²´ë¥¼ ê· ì¼í•˜ê²Œ í•´ì¤€ ë’¤ -80â„ƒì— ë³´ê´€í•œë‹¤. 
 
 
 ## [2.1] DNA preparation for short reads sequencing
-###Reagents
+### Reagents  
 **FastDNA SPIN Kit for Feces (MP Biomedicals)**  
 - Sodium Phosphate Buffer (MP Biomedicals), MT Buffer (MP Biomedicals), PLS Solution (MP Biomedicals), PPS Solution (MP Biomedicals), Wash Buffer #1(MP Biomedicals), Wash Buffer #2 (MP Biomedicals), TES (MP Biomedicals), 100% ethanol
 
 
-### DNA extraction
-1. Fume hood¿¡¼­ ÀüÀÚÀú¿ï°ú ¸ê±ÕµÈ ½ºÆÐÃô·¯¸¦ ÀÌ¿ëÇÏ¿© ¾ÆÀÌ½º¿¡ ²È¾Æ µÐ ºÐº¯ »ùÇÃ 500mgÀ» Lysing matrix E tube¿¡ ¿Å±ä´Ù. 
-2. 825 ¥ìlÀÇ sodium phosphate buffer¿Í 825 ¥ìlÀÇ PLS ¼Ö·ç¼ÇÀ» ³Ö°í ¶Ñ²±À» ´ÝÀº µÚ »ùÇÃÀÌ Æ©ºê¾È¿¡¼­ Ç®¾îÁöµµ·Ï 10-15ÃÊ°£ vortexing ÇÑ´Ù.
-3. »ùÇÃÀ» 14,000¥ªg·Î 5ºÐµ¿¾È ¿ø½ÉºÐ¸® ÇÑ ÈÄ »óÃþ¾×À» ¹ö¸°´Ù.
-4. 978 ¥ìlÀÇ sodium phosphate buffer¿Í 122 ¥ìlÀÇ MT buffer¸¦ ³ÖÀº ÈÄ ´Ù½Ã »ùÇÃÀÌ Ç®¾îÁú ¶§ ±îÁö voltexingÇÑ´Ù.
-5. FastPrep 24 ±â±â¿Í °°Àº beadbeater¸¦ ÀÌ¿ëÇÏ¿© 6.0m/s ¼Óµµ·Î 40ÃÊ°£ »ùÇÃÀ» ÆÄ¼â ¹× ±ÕÁúÈ­ ÇÑ´Ù. (¸¸¾à Å©±â°¡ Å« debris ¶§¹®¿¡ ÆÄ¼â°¡ ÃæºÐÇÏÁö ¾Ê¾Ò´Ù°í ÆÇ´ÜµÇ¸é,, ¸ðµç »ùÇÃ¿¡ µ¿ÀÏÇÑ Á¶°ÇÀ¸·Î Ãß°¡ ÆÄ¼â¸¦ ÁøÇàÇÏµÇ Áøµ¿ ¶§¹®¿¡ ¹ß»ýÇÏ´Â ¿­¿¡ ÁÖÀÇÇÏ¸ç ÃæºÐÈ÷ intervalÀ» µÎµµ·Ï ÇÑ´Ù.) 
-6. »ùÇÃÀ» 14,000¥ªg·Î 5ºÐµ¿¾È ¿ø½ÉºÐ¸® ÇÑ ÈÄ »óÃþ¾×À» 2ml tube·Î ¿Å±ä´Ù.
-7. 250 ¥ìlÀÇ PPS solutionÀ» Ã·°¡ÇÑ µÚ ÃµÃµÈ÷ invertingÇÑ µÚ (vortexing ±ÝÁö) 4¡É¿¡¼­ 10ºÐ°£ º¸°üÇß´Ù°¡ 2ºÐµ¿¾È 14,000¥ªg·Î ¿ø½ÉºÐ¸® ÇÑ´Ù.
-8. ¿ø½ÉºÐ¸® ÇÏ´Â µ¿¾È binding matrix solution 1 mlÀ» 15 ml conical tube¿¡ ¿Å°Ü³õ´Â´Ù.
-9. ¿ø½ÉºÐ¸®°¡ ³¡³­ »ùÇÃÀÇ »óÃþ¾×À» binding matrix solutionÀ» ³Ö¾ú´ø 15 ml tube¿¡ ¿Å±â°í invertingÇÑ ´ÙÀ½ ³»¿ë¹°ÀÌ ÃæºÐÈ÷ ¼¯ÀÏ ¼ö ÀÖ´Â °¢µµ·Î shaker¿¡ 3-5ºÐµ¿¾È ³öµÐ´Ù.
-10. Shaking incubator¿¡ »ùÇÃÀÌ ÃæºÐÈ÷ Àß ¼¯ÀÏ ¼ö ÀÖ´Â °¢µµ·Î tube¸¦ ²ÈÀº µÚ 3-5ºÐµ¿¾È ³öµÐ´Ù.
-11. 2ºÐµ¿¾È 14,000¥ªg·Î ¿ø½ÉºÐ¸® ÇÑ ÈÄ »óÃþ¾×À» ¹ö¸°´Ù.
-12. 1 mlÀÇ wash buffer #1À» ³Ö°í ºÎµå·´°Ô pelletÀ» ÀçÇöÅ¹ ÇÑ´Ù.
-13. SPIN filter tube¿¡ binding matrix¿Í wash buffer #1 È¥ÇÕ¾×À» 600 ¥ìl ¿Å±ä µÚ 1ºÐµ¿¾È 14,000¥ªg·Î ¿ø½ÉºÐ¸® ÇÑ ÈÄ catch tube¸¦ ºñ¿î µÚ ´Ù½Ã ³²Àº ¿ë¾×À» ¿Å°Ü ¿ø½ÉºÐ¸® ÇÑ´Ù. ÀÌÈÄ catch tube¸¦ ´Ù½Ã ºñ¿î´Ù.
-14. 500 ¥ìlÀÇ wash buffer #2 (¿¡Åº¿ÃÀÌ Ã·°¡µÈ)¸¦ SPIN filter tube¿¡ ³Ö°í ºÎµå·´°Ô pipetting ÈÄ resuspensionÇÑ´Ù (vortexing ±ÝÁö).
-15. 2ºÐµ¿¾È 14,000¥ªg·Î ¿ø½ÉºÐ¸® ÇÑ ÈÄ catch tube¸¦ ºñ¿î´Ù.
-16. ´Ù½Ã 2ºÐµ¿¾È 14,000¥ªg·Î ¿ø½ÉºÐ¸® ÇÑ ÇÏ¿© pellet¿¡ ³²¾ÆÀÖ´Â ÀÜ¿© wash buffer¸¦ ³¯·Á dryÇÑ »óÅÂ°¡ µÇµµ·Ï ÇÑ´Ù.
-17. SPIN filter ¹öÄÏÀ» »õ 1.9 ml catch tube·Î ¿Å±ä µÚ 60-100 ¥ìlÀÇ TES ¿ë¾×À» Ã·°¡ÇÑ´Ù. ¼Õ ³¡À» ÀÌ¿ëÇÏ¿© pelletÀÌ ¿ë¾×°ú ¼¯ÀÌµµ·Ï tapping ÇÑ´Ù. (vortexing ±ÝÁö)
-18. 2ºÐµ¿¾È 14,000¥ªg·Î ¿ø½ÉºÐ¸® ÇÏ¿© pellet¿¡¼­ DNA¸¦ elutionÇÑ´Ù. 
-19. Nano dropÀ» ÀÌ¿ëÇÏ¿© Á¤·®ÇÑ µÚ -20¡É¿¡ ¾ó·Á¼­ º¸°üÇÑ´Ù.
+### DNA extraction  
+1. Fume hoodì—ì„œ ì „ìžì €ìš¸ê³¼ ë©¸ê· ëœ ìŠ¤íŒ¨ì¸ŒëŸ¬ë¥¼ ì´ìš©í•˜ì—¬ ì•„ì´ìŠ¤ì— ê½‚ì•„ ë‘” ë¶„ë³€ ìƒ˜í”Œ 500mgì„ Lysing matrix E tubeì— ì˜®ê¸´ë‹¤. 
+2. 825 Î¼lì˜ sodium phosphate bufferì™€ 825 Î¼lì˜ PLS ì†”ë£¨ì…˜ì„ ë„£ê³  ëšœê»‘ì„ ë‹«ì€ ë’¤ ìƒ˜í”Œì´ íŠœë¸Œì•ˆì—ì„œ í’€ì–´ì§€ë„ë¡ 10-15ì´ˆê°„ vortexing í•œë‹¤.
+3. ìƒ˜í”Œì„ 14,000â…¹gë¡œ 5ë¶„ë™ì•ˆ ì›ì‹¬ë¶„ë¦¬ í•œ í›„ ìƒì¸µì•¡ì„ ë²„ë¦°ë‹¤.
+4. 978 Î¼lì˜ sodium phosphate bufferì™€ 122 Î¼lì˜ MT bufferë¥¼ ë„£ì€ í›„ ë‹¤ì‹œ ìƒ˜í”Œì´ í’€ì–´ì§ˆ ë•Œ ê¹Œì§€ voltexingí•œë‹¤.
+5. FastPrep 24 ê¸°ê¸°ì™€ ê°™ì€ beadbeaterë¥¼ ì´ìš©í•˜ì—¬ 6.0m/s ì†ë„ë¡œ 40ì´ˆê°„ ìƒ˜í”Œì„ íŒŒì‡„ ë° ê· ì§ˆí™” í•œë‹¤. (ë§Œì•½ í¬ê¸°ê°€ í° debris ë•Œë¬¸ì— íŒŒì‡„ê°€ ì¶©ë¶„í•˜ì§€ ì•Šì•˜ë‹¤ê³  íŒë‹¨ë˜ë©´,, ëª¨ë“  ìƒ˜í”Œì— ë™ì¼í•œ ì¡°ê±´ìœ¼ë¡œ ì¶”ê°€ íŒŒì‡„ë¥¼ ì§„í–‰í•˜ë˜ ì§„ë™ ë•Œë¬¸ì— ë°œìƒí•˜ëŠ” ì—´ì— ì£¼ì˜í•˜ë©° ì¶©ë¶„ížˆ intervalì„ ë‘ë„ë¡ í•œë‹¤.) 
+6. ìƒ˜í”Œì„ 14,000â…¹gë¡œ 5ë¶„ë™ì•ˆ ì›ì‹¬ë¶„ë¦¬ í•œ í›„ ìƒì¸µì•¡ì„ 2ml tubeë¡œ ì˜®ê¸´ë‹¤.
+7. 250 Î¼lì˜ PPS solutionì„ ì²¨ê°€í•œ ë’¤ ì²œì²œížˆ invertingí•œ ë’¤ (vortexing ê¸ˆì§€) 4â„ƒì—ì„œ 10ë¶„ê°„ ë³´ê´€í–ˆë‹¤ê°€ 2ë¶„ë™ì•ˆ 14,000â…¹gë¡œ ì›ì‹¬ë¶„ë¦¬ í•œë‹¤.
+8. ì›ì‹¬ë¶„ë¦¬ í•˜ëŠ” ë™ì•ˆ binding matrix solution 1 mlì„ 15 ml conical tubeì— ì˜®ê²¨ë†“ëŠ”ë‹¤.
+9. ì›ì‹¬ë¶„ë¦¬ê°€ ëë‚œ ìƒ˜í”Œì˜ ìƒì¸µì•¡ì„ binding matrix solutionì„ ë„£ì—ˆë˜ 15 ml tubeì— ì˜®ê¸°ê³  invertingí•œ ë‹¤ìŒ ë‚´ìš©ë¬¼ì´ ì¶©ë¶„ížˆ ì„žì¼ ìˆ˜ ìžˆëŠ” ê°ë„ë¡œ shakerì— 3-5ë¶„ë™ì•ˆ ë†”ë‘”ë‹¤.
+10. Shaking incubatorì— ìƒ˜í”Œì´ ì¶©ë¶„ížˆ ìž˜ ì„žì¼ ìˆ˜ ìžˆëŠ” ê°ë„ë¡œ tubeë¥¼ ê½‚ì€ ë’¤ 3-5ë¶„ë™ì•ˆ ë†”ë‘”ë‹¤.
+11. 2ë¶„ë™ì•ˆ 14,000â…¹gë¡œ ì›ì‹¬ë¶„ë¦¬ í•œ í›„ ìƒì¸µì•¡ì„ ë²„ë¦°ë‹¤.
+12. 1 mlì˜ wash buffer #1ì„ ë„£ê³  ë¶€ë“œëŸ½ê²Œ pelletì„ ìž¬í˜„íƒ í•œë‹¤.
+13. SPIN filter tubeì— binding matrixì™€ wash buffer #1 í˜¼í•©ì•¡ì„ 600 Î¼l ì˜®ê¸´ ë’¤ 1ë¶„ë™ì•ˆ 14,000â…¹gë¡œ ì›ì‹¬ë¶„ë¦¬ í•œ í›„ catch tubeë¥¼ ë¹„ìš´ ë’¤ ë‹¤ì‹œ ë‚¨ì€ ìš©ì•¡ì„ ì˜®ê²¨ ì›ì‹¬ë¶„ë¦¬ í•œë‹¤. ì´í›„ catch tubeë¥¼ ë‹¤ì‹œ ë¹„ìš´ë‹¤.
+14. 500 Î¼lì˜ wash buffer #2 (ì—íƒ„ì˜¬ì´ ì²¨ê°€ëœ)ë¥¼ SPIN filter tubeì— ë„£ê³  ë¶€ë“œëŸ½ê²Œ pipetting í›„ resuspensioní•œë‹¤ (vortexing ê¸ˆì§€).
+15. 2ë¶„ë™ì•ˆ 14,000â…¹gë¡œ ì›ì‹¬ë¶„ë¦¬ í•œ í›„ catch tubeë¥¼ ë¹„ìš´ë‹¤.
+16. ë‹¤ì‹œ 2ë¶„ë™ì•ˆ 14,000â…¹gë¡œ ì›ì‹¬ë¶„ë¦¬ í•œ í•˜ì—¬ pelletì— ë‚¨ì•„ìžˆëŠ” ìž”ì—¬ wash bufferë¥¼ ë‚ ë ¤ dryí•œ ìƒíƒœê°€ ë˜ë„ë¡ í•œë‹¤.
+17. SPIN filter ë²„ì¼“ì„ ìƒˆ 1.9 ml catch tubeë¡œ ì˜®ê¸´ ë’¤ 60-100 Î¼lì˜ TES ìš©ì•¡ì„ ì²¨ê°€í•œë‹¤. ì† ëì„ ì´ìš©í•˜ì—¬ pelletì´ ìš©ì•¡ê³¼ ì„žì´ë„ë¡ tapping í•œë‹¤. (vortexing ê¸ˆì§€)
+18. 2ë¶„ë™ì•ˆ 14,000â…¹gë¡œ ì›ì‹¬ë¶„ë¦¬ í•˜ì—¬ pelletì—ì„œ DNAë¥¼ elutioní•œë‹¤. 
+19. Nano dropì„ ì´ìš©í•˜ì—¬ ì •ëŸ‰í•œ ë’¤ -20â„ƒì— ì–¼ë ¤ì„œ ë³´ê´€í•œë‹¤.
 
 ## [2.2] DNA preparation for long reads seqencing
 ### Reagents
 **QIAamp PowerFecal DNA kit (Qiagen)**  
-(Long read ½ÃÄö½ÌÀ» À§ÇØ¼­ DNA ¾çÀÌ ¸¹ÀÌ ÇÊ¿äÇÏ¸ç, DNA fragmentationÀ» ÃÖ¼ÒÈ­ÇØ¾ßÇÏ±â ¶§¹®¿¡, PacBio»ç¿¡¼­ ÃßÃµÇÏ´Â **QIAamp PowerFecal DNA kit** (Qiagen)¸¦ »ç¿ëÇÏ¿´´Ù.)
+(Long read ì‹œí€€ì‹±ì„ ìœ„í•´ì„œ DNA ì–‘ì´ ë§Žì´ í•„ìš”í•˜ë©°, DNA fragmentationì„ ìµœì†Œí™”í•´ì•¼í•˜ê¸° ë•Œë¬¸ì—, PacBioì‚¬ì—ì„œ ì¶”ì²œí•˜ëŠ” **QIAamp PowerFecal DNA kit** (Qiagen)ë¥¼ ì‚¬ìš©í•˜ì˜€ë‹¤.)
 
 
 ### DNA extraction
-Å°Æ® Á¦Á¶»çÀÇ ÇÁ·ÎÅäÄÝÀ» µû¶ó ºÐº¯À¸·ÎºÎÅÍ DNA extractionÀ» ¼öÇàÇÏ¿´À½.
+í‚¤íŠ¸ ì œì¡°ì‚¬ì˜ í”„ë¡œí† ì½œì„ ë”°ë¼ ë¶„ë³€ìœ¼ë¡œë¶€í„° DNA extractionì„ ìˆ˜í–‰í•˜ì˜€ìŒ.
 
 
