@@ -1,6 +1,5 @@
 # Binning
-![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_10_1.png?raw=true){: width="100%"}
-
+![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_10_1.png?raw=true)  
 Metagenome 분석에서 binning이란 contig들을 특정 조건하에 그룹화 시키는 과정으로써 주로 sequence의 조성과 coverage 데이터가 사용된다.
 Binning 프로그램을 통해 contig를 클러스터링 함으로써 완성도 높은 하나의 미생물 유전체를 확보할 수 있으며 오염도(contamination)와 완벽도 (completeness)에 따라서 quality 측정이 가능하다.
 MetaBAT2 [18]외에도 광범위하게 쓰이는 다른 binning 프로그램으로는 MaxBin 2.0 [19], CONCOCT [20]가 있다.  

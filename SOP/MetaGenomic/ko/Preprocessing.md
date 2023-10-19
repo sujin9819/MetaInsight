@@ -1,6 +1,6 @@
 # Preprocessing of the sequencing reads
 
-![preprocessing pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_5_1.png?raw=true){: width="100%"}
+![preprocessing pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_5_1.png?raw=true)  
 
 ## Short reads
 

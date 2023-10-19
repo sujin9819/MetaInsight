@@ -1,5 +1,5 @@
 # Taxonomic annotation of contigs
-![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_8_1.png?raw=true){: width="100%"}
+![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_8_1.png?raw=true)  
 
 Metagenome dataset의 taxonomic profiling방식은 크게 3가지로 나뉠 수 있다. (1) DNA-to-DNA, (2) DNA-to-protein, (3) DNA-to-marker genes.
 가장 많이 쓰이는 방법인 (1)번 방법은 BLASTn과 유사하며 genomic 데이터베이스를 사용하고, (2)번 방법은 BLASTx와 유사하며 protein 데이터베이스를 필요로 한다. 

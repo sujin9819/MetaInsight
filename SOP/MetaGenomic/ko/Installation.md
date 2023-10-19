@@ -34,7 +34,7 @@ $ conda activate new-env
 $ conda deactivate
 ```
 
-다음 표는 본 SOP에서 사용되는 프로그램들의 설치코드의 예시와 Anaconda 주소이다. create –n 다음의 환경이름은 사용자가 임의적으로 변경 가능하다. 
+다음 표는 본 SOP에서 사용되는 프로그램들의 설치코드의 예시와 Anaconda 주소이다. 'create –n' 다음의 환경이름은 사용자가 임의적으로 변경 가능하다. 
 
 | 분석 툴 | 설치 코드 | ANACONDA 주소
 | ------ | ------ | ------ |
