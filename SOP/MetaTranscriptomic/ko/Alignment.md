@@ -8,9 +8,9 @@
 ![alignment](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_6_2.png?raw=true)
 
 Pre-processing을 진행하여 sequence quality가 개선된 fastq 파일을 reference 시퀀스*에 mapping하여 alignment를 수행한다. 이때 STAR 프로그램을 이용하여 reference파일을 제작하고 만든 reference서열에 reads를 mapping하게 된다.
-> *Reference 시퀀스의 종류
-1. 메타유전체 de novo assembly 파이프라인 분석 결과로 얻어진 final.contig.fa
-2. 메타유전체 MAG binning결과 로 얻어진 MAG.fa
+- *Reference 시퀀스의 종류
+ 1. 메타유전체 de novo assembly 파이프라인 분석 결과로 얻어진 final.contig.fa
+ 2. 메타유전체 MAG binning결과 로 얻어진 MAG.fa
 
 ```bash
 #building STAR index
@@ -38,7 +38,7 @@ $ samtools index sample.bam
 IGV 프로그램으로 alignment결과를 확인하려면 메타유전체 de novo assembly 또는 MAG결과로 얻어진 MAG.fa이 필요하다.
 추가적으로 MAG.fa 서열 내에 annotation 된 CDS (coding sequence) 정보도 함께 표시하고 싶다면 이를 annotation하여 얻어진 .gff파일*도 함께 import 할 수 있다.
 또한, samtools 적용 결과 얻어진 coverage value 정보를 포함한 .bam과 samtools index 결과 생성된 .bam.bai파일이 필요하다.
-해당 파일들이 모두 import 되면 reference 서열에 CDS 정보 및 메타전사체 분석 sequence reads가 mapping 된 위치와 각 위치에 mapping 된 메타전사체 read count정보도 시각화하여 보여준다.
+해당 파일들이 모두 import 되면 reference 서열에 CDS 정보 및 메타전사체 분석 sequence reads가 mapping 된 위치와 각 위치에 mapping 된 메타전사체 read count정보도 시각화하여 보여준다.  
 *gff (General Feature Format) 파일; MAG.fa에 대한 gff 파일 생성은 메타유전체 SOP 참고
 
 ![IGV 결과](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_6_3.png?raw=true)
