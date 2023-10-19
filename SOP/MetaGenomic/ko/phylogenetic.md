@@ -1,5 +1,5 @@
 ﻿# Phylogenomic tree construction of the MAG
-![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_11_1.png?raw=true)
+![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_11_1.png?raw=true){: width="100%"}
 
 Metagenome으로부터 여러 유전체를 복원한 후에 taxonomic assignment를 진행하기 위해선 다양한 방법이 있는데, 그 중 GTDB 데이터베이스 (GTDB; https://gtdb.ecogenomic.org) [22]와 classification을 도와주는 GTDB-tk [23]가 가장 많이 사용된다.
 GTDB는 RefSeq과 GenBank를 기반으로 다양한 환경 sample들에서 복원된 MAG 정보를 collection 한 데이터베이스이며 MAG기법의 발달과 함께 빠른 속도로 정보량이 증가하는 추세를 보이고 있다.  

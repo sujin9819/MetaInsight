@@ -1,5 +1,5 @@
 # Functional annotation of contigs
-![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_9_1.png?raw=true)
+![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_9_1.png?raw=true){: width="100%"}
 
 Contig의 taxonomic annotation을 마치면 functional assignment를 하기 위해 contig 내 open reading frame에 관한 정보를 추출해야 한다.
 Prodigal은 원핵생물의 protein coding sequence를 예측하는 기능을 가지며 complete 혹은 draft genome 분석 외에도 metagenome분석에도 활용될 수 있다.
