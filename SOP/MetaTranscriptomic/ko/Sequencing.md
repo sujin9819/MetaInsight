@@ -23,7 +23,7 @@ Optional; Qubit fluorometer (Thermo Fisher Scientific), Fragment analyzer
 
 ### RNA preparation
 1. 각 screw-top tube에 fecal sample과 bead를 넣고 반응액을 처리한다.  
-| Each tube |  |
+| Each tube | volume |
 | --- | --- |
 | Fecal sample | 150mg |
 | 1.0mm zirconia/silica beads | ~20 |
