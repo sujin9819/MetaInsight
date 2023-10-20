@@ -16,11 +16,14 @@
 
 이러한 요구들을 근거로 RNA-seq은 마이크로바이옴 연구에서 활용되는 빈도가 높아지고 있으며 본 SOP에서는 메타유전체으로 얻어진 de novo assembled contig 및 metagenome-assembled genome (MAG) 서열에 RNA-seq read들을 mapping하는 방식을 기반으로 하는 reference-guided 메타전사체 분석과 reference-independent 메타전사체 분석 방법을 기술하고자 한다.
 
-![Metatranscriptomics overview](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_0_2.png?raw=true){: width=50%}
-> Reference-guided 및 reference-independent 메타전사체 분석 방법
+![Metatranscriptomics overview](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_0_2.png?raw=true){: width=50%}  
+> Reference-guided 및 reference-independent 메타전사체 분석 방법  
 
 본격적인 SOP 소개에 앞서 메타전사체 분석에 활용할 수 있는 여러가지 툴을 소개한다.
 본 SOP에 소개된 툴 이외에도 표 1에 나열된 툴 혹은 유사한 목적을 가진 툴을 각 단계에 선택적으로 적용 가능하다.
+
+
+[cutadapt](https://cutadapt.readthedocs.io/en/stable/)
 
 
 <table>
