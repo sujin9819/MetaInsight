@@ -1,7 +1,7 @@
 # Transcript taxonomy classification
 
 메타유전체분석에서 taxonomy profiling이 이루어지는 것과 마찬가지로 메타전사체 데이터를 활용하여 read 혹은 contig 기반의 taxonomy assignment를 수행하면 환경에서active하게 발현하는 microorganism의 정보를 얻을 수 있다.  
-메타유전체 SOP에서 소개된 Kaiju 툴을 활용한 방식이 아닌, 간단한 방법으로 taxonomy 분석이 가능한 [One codex][https://www.onecodex.com/] 웹서버를 소개하고자 한다.
+메타유전체 SOP에서 소개된 Kaiju 툴을 활용한 방식이 아닌, 간단한 방법으로 taxonomy 분석이 가능한 [One codex](https://www.onecodex.com/) 웹서버를 소개하고자 한다.
 One codex 사이트는fasta 파일이나 fastq 파일을 input 데이터로 결과를 도출할 수 있다. Taxonomy 분석에는 one codex에서 자체적으로 구축한 11만여개의 유전체 정보로 이루어진 자체 database 및 16S, 5S, 23S, gyrB, ITS 등의 targeted loci database가 사용된다. 
 
 ![IGV 결과](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_10_1.png?raw=true)
