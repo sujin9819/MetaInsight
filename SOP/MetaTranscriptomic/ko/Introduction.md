@@ -11,7 +11,7 @@
 <figure align = "center">
 <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_0_1.png?raw=true" style="width:90%">
 <figcaption><b>> 멀티오믹스 정보기반 마이크로바이옴 기능 분석</b></figcaption>  
-<figure>
+</figure>
 
 대용량 염기서열 분석법이 도입되기 이전부터 qPCR을 활용한 관심있는 유전자의 RNA의 발현 정도 측정 및 microarray 기술을 활용한 특정 개체의 알려져 있는 transcript의 발현양상 연구가 이루어져 왔으며, NGS 기술의 상용화로 알려져 있는 transcript target의 발현 정도 뿐 만이 아니라 non-coding RNA를 비롯한 알려져 있지 않았던 transcript 및 transcript variants 등 특정 환경의 모든 전사체(transcriptome) 정보를 RNA sequencing(RNA-seq) 데이터 분석으로 얻을 수 있게 되었다.
 이러한 이유로 RNA-seq은 마이크로바이옴 연구에서도 활용되는 빈도가 높아지고 있으며 유전자 발현 분석, 집단 내 높은 활성을 보이는 미생물군 규명, 조절인자 규명, 미생물간 상호작용, 숙주와의 상호작용 연구 등 다양한 분야에 응용되고 있다.
@@ -21,7 +21,7 @@
 <figure align = "center">
 <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_0_2.png?raw=true" style="width:65%">
 <figcaption><b>Reference-guided 및 reference-independent 메타전사체 분석 방법</b></figcaption>  
-<figure>
+</figure>
 본격적인 SOP 소개에 앞서 메타전사체 분석에 활용할 수 있는 여러가지 툴을 소개한다.
 본 SOP에 소개된 툴 이외에도 표 1에 나열된 툴 혹은 유사한 목적을 가진 툴을 각 단계에 선택적으로 적용 가능하다.
 
