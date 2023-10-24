@@ -3,9 +3,10 @@
 
 ## 메타유전체 (Metagenome) 개요
 
-
-![Metagenomics overview](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_0_1.png?raw=true)
-<center> Metagenomics overview</center>  
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_0_1.png?raw=true" style="width:90%">
+  <figcaption><b>Metagenomics overview</b></figcaption>  
+</figure>
 
 메타유전체(metagenome)란 다양한 환경 시료(동물, 식물, 해양 등)에 존재하는 유전적 물질의 총체를 의미한다.
 메타유전체 분석은 특정 환경 생태계에 존재하는 모든 생명체들의 유전적 정보를 추출하여 분석한다.

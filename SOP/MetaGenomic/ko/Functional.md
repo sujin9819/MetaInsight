@@ -1,5 +1,8 @@
 # Functional annotation of contigs
-![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_9_1.png?raw=true)  
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_9_1.png?raw=true" style="width:90%">
+  <figcaption><b></b></figcaption>  
+</figure>
 
 Contig의 taxonomic annotation을 마치면 functional assignment를 하기 위해 contig 내 open reading frame에 관한 정보를 추출해야 한다.
 Prodigal은 원핵생물의 protein coding sequence를 예측하는 기능을 가지며 complete 혹은 draft genome 분석 외에도 metagenome분석에도 활용될 수 있다.
@@ -28,7 +31,10 @@ $ conda deactivate
 ```
 
 ▶report.html 결과 예시
-![eggnog_results](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_9_2.png?raw=true)
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_9_2.png?raw=true" style="width:90%">
+  <figcaption><b></b></figcaption>  
+</figure>
 
-eggNOG-mapper 는 stand alone버전 외에도 간단하게 web 상에서 분석할 수 있는 서비스를 제공하며 FASTA 포맷 내에서 최대 1000,000개의 protein까지 input으로 수용이 가능하다 (http://eggNOG-mapper.embl.de/). 
+[eggNOG-mapper](http://eggNOG-mapper.embl.de/)는 stand alone버전 외에도 간단하게 web 상에서 분석할 수 있는 서비스를 제공하며 FASTA 포맷 내에서 최대 1000,000개의 protein까지 input으로 수용이 가능하다. 
 

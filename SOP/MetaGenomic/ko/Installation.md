@@ -7,8 +7,10 @@
 - Binning : MetaBAT2, BBmap, minimap2, samtools, CheckM
 - Phylogenetic tree construction : GTDB-tk, PhyloPhlAn3
 
-![메타유전체 분석 파이프라인](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_4_1.png?raw=true)
-> 메타유전체 분석 파이프라인
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_4_1.png?raw=true" style="width:90%">
+  <figcaption><b>메타유전체 분석 파이프라인</b></figcaption>  
+</figure>
 
 # Installation
 
@@ -16,8 +18,7 @@
 메타 유전체 분석을 위해서는 다양한 분석 프로그램들을 설치해야 한다. 이때 프로그램들간의 충돌 또는 버전 의존성 문제가 발생할 수 있다.
 예를 들면, 프로그램 A는 특정 버전의 프로그램 B에 의존하는데 프로그램 C의 경우 다른 버전의 프로그램 B에 의존 할 경우 초보자들이 프로그램 C를 설치하기는 상당히 많은 노력과 시간이 필요하게 된다.
 이때 파이썬 패키지 및 환경 매니저 프로그램인 Conda를 이용하여 프로그램을 설치하면 이러한 특정 버전의 충돌 문제를 해결 할 수 있다.
-본 SOP에 사용되는 분석 툴들은 Conda를 이용하여 설치하길 권장한다. 아래의 사이트는 Conda에 대한 공식문서 사이트이다.
-[https://docs.conda.io/projects/conda/en/latest/user-guide/index.html]
+본 SOP에 사용되는 분석 툴들은 [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html)를 이용하여 설치하길 권장한다.
 
 ### Making a new environment 
 프로그램 간의 충돌이 발생하지 않도록 프로그램을 설치 할 때마다 새로운 Conda 환경을 만드는 것을 권장한다. 새로운 Conda 환경을 만드는 방법의 예시는 아래와 같다

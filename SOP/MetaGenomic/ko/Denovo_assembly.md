@@ -1,5 +1,8 @@
 # *De novo* assembly
-![example of humann output3](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_7_1.png?raw=true)
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_7_1.png?raw=true" style="width:90%">
+  <figcaption><b></b></figcaption>  
+</figure>
 
 ## Short reads 
 Read-based profiling은 빠른 시간 내에 metagenome에 대한 전반적인 분석결과를 제공할 수 있지만 시퀀서의 발달에도 불구하고 sequence read length가 짧기 때문에 database 상에 alignment되지 못하는 unmapped read들이 다량 존재한다.
@@ -54,7 +57,10 @@ long read assembly 결과는 bandage plot으로 시각화 할 수 있다. Bandag
 
 Bandage 프로그램을 실행시킨 후 상단의 File > Load graph에서 *p_ctg.gfa 파일을 load해주면 된다. 파일이 loading 되면 Graph drawing에서 Draw graph 를 클릭해주어야 그래프가 나타난다. 
 
-![bandage프로그램](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_7_2.png?raw=true)
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_7_2.png?raw=true" style="width:90%">
+  <figcaption><b></b></figcaption>  
+</figure>
 
 Assembly가 끝나면 생산된 contig들의 정보를 알기 위해 [QUAST(Quality assessment tool)][8]을 사용하여 assemble 결과 및quality를 확인한다.
 ```bash
@@ -64,8 +70,11 @@ $ quast.py MEGAHIT_result/final.contigs.fa -o MEGAHIT_quast
 $ conda deactivate
 ```
 
-▶report.html 결과 예시 
-![report.html 결과 예시1](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_7_3.png?raw=true)
+ 
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_7_3.png?raw=true" style="width:90%">
+  <figcaption><b>▶report.html 결과 예시</b></figcaption>  
+</figure>
 
 * contigs : assembly 후 생산된 contig의 개수
 Largest contig : assembly 후 생성된 contig들 중 가장 긴 contig의 길이
@@ -77,4 +86,7 @@ L75 : assembly 후 생성된 contig 들 중 N75의 길이를 가지는 contig �
 Mismatches # N’s : assembly가 되지 않은 uncalled bases 개수
 Mismatches # N’s per 100kbp : 100000 base 당 uncalled 된 bases의 개수
 Contig 인덱스 증가에 따른 누적 길이를 나타내는 그래프와 contigs의 GC contents를 나타내는 그래프 
-![report.html 결과 예시2](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_7_4.png?raw=true)
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_7_4.png?raw=true" style="width:90%">
+  <figcaption><b>Metagenomics overview</b></figcaption>  
+</figure>

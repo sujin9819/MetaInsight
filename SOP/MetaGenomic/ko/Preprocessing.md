@@ -1,10 +1,13 @@
 # Preprocessing of the sequencing reads
 
-![preprocessing pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_5_1.png?raw=true)  
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_5_1.png?raw=true" style="width:90%">
+  <figcaption><b></b></figcaption>  
+</figure>
 
 ## Short reads
 
-Raw sequence data의 quality control 작업을 위해서는 (1) low quality bases 제거, (2) Artifact 제거 (barcodes, adaptors, chimeras)가 이루어져야 한다. KneadData (https://bitbucket.org/biobakery/kneaddata) 는 Trimmomatic [1] (quality filtering/trimming)과 Tandem Repeat Finder (TRF), 그리고 FastQC 와 read align을 위한 Bowtie2 [2]를 사용하여 read preprocessing을 진행한다.
+Raw sequence data의 quality control 작업을 위해서는 (1) low quality bases 제거, (2) Artifact 제거 (barcodes, adaptors, chimeras)가 이루어져야 한다. [KneadData](https://bitbucket.org/biobakery/kneaddata) 는 Trimmomatic [1] (quality filtering/trimming)과 Tandem Repeat Finder (TRF), 그리고 FastQC 와 read align을 위한 Bowtie2 [2]를 사용하여 read preprocessing을 진행한다.
 Trimmomatic 진행 시 --trimmomatic-options="MINLEN:"을 통해 서열길이의 최소길이를 input read의 percentage로 지정할 수 있다.x
 
 ```bash
@@ -16,7 +19,10 @@ $ kneaddata --input1 input/seq1.fastq --input2 input/seq2.fastq --reference-db h
 $ conda deactivate
 ```
 ▶kneaddata output예시
-![example of kneaddata output](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_5_2.png?raw=true)
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_5_2.png?raw=true" style="width:90%">
+  <figcaption><b></b></figcaption>  
+</figure>
 
 ▶Output files 예시
 1. seq.kneaddata_human_genome_bowtie2_contam.fastq 
