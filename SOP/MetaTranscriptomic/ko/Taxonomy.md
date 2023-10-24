@@ -5,7 +5,7 @@
 One codex 사이트는fasta 파일이나 fastq 파일을 input 데이터로 결과를 도출할 수 있다. Taxonomy 분석에는 one codex에서 자체적으로 구축한 11만여개의 유전체 정보로 이루어진 자체 database 및 16S, 5S, 23S, gyrB, ITS 등의 targeted loci database가 사용된다. 
 
 <figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_10_1.png?raw=true" style="width:90%">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_10_1.png?raw=true" style="width:75%">
   <figcaption><b>One codex reference database</b></figcaption>  
 </figure>
 

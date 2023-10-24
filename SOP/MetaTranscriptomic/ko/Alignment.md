@@ -42,8 +42,8 @@ $ samtools index sample.bam
 
 이러한 `.bam`파일은 IGV를 통해서 alignment 결과의 시각화를 진행할 수 있다.
 IGV 프로그램으로 alignment결과를 확인하려면 메타유전체 de novo assembly 또는 MAG결과로 얻어진 MAG.fa이 필요하다.
-추가적으로 MAG.fa 서열 내에 annotation 된 CDS (coding sequence) 정보도 함께 표시하고 싶다면 이를 annotation하여 얻어진 .gff파일*도 함께 import 할 수 있다.
-또한, samtools 적용 결과 얻어진 coverage value 정보를 포함한 .bam과 samtools index 결과 생성된 .bam.bai파일이 필요하다.
+추가적으로 `MAG.fa` 서열 내에 annotation 된 CDS (coding sequence) 정보도 함께 표시하고 싶다면 이를 annotation하여 얻어진 `.gff파일*`도 함께 import 할 수 있다.
+또한, samtools 적용 결과 얻어진 coverage value 정보를 포함한 `.bam`과 samtools index 결과 생성된 `.bam.bai`파일이 필요하다.
 해당 파일들이 모두 import 되면 reference 서열에 CDS 정보 및 메타전사체 분석 sequence reads가 mapping 된 위치와 각 위치에 mapping 된 메타전사체 read count정보도 시각화하여 보여준다.  
 *gff (General Feature Format) 파일; MAG.fa에 대한 gff 파일 생성은 메타유전체 SOP 참고
 
@@ -60,8 +60,8 @@ $ make install
 # run prodigal
 $ prodigal -i sample_MAG.fa -p meta -a sample_MAG.prodigal.faa -d sample_MAG.prodigal.fna -f gff -o sample_MAG.prodigal.gff 
 ```
-Bedtools을 활용해서 각 functional annotation이 완료된 각 CDS에 대한 coverage (count) 정보를 얻을 수 있다. Bedtools 적용 전, bedtools활용에 필요한 정보만으로 .gff 항목을 간소화 하는 것이 좋다.
-ParseGennomeAnnotaion.py python스크립트를 사용하여 functional annotation으로 얻어진gff 파일 정보 중, CDS 정보, CDS의 위치, locus tag정보만으로 구성된 간략화된gff 파일로 parsing한다.
+Bedtools을 활용해서 각 functional annotation이 완료된 각 CDS에 대한 coverage (count) 정보를 얻을 수 있다. Bedtools 적용 전, bedtools활용에 필요한 정보만으로 `.gff` 항목을 간소화 하는 것이 좋다.
+ParseGennomeAnnotaion.py python스크립트를 사용하여 functional annotation으로 얻어진gff 파일 정보 중, CDS 정보, CDS의 위치, locus tag 정보만으로 구성된 간략화된 gff 파일로 parsing한다.
 
 ```bash
 #make CDS only gff file with python-script
@@ -80,7 +80,7 @@ $ cd bedtools2
 #alignment
 $ bedtools bamtobed –i sample.bam > sample.bed
 $ bedtools coverage –a MAG.CDS.gff –b sample.bed –s > sample.cov
-
+```
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_6_4.png?raw=true" style="width:90%">
