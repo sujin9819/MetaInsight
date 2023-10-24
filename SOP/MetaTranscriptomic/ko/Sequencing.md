@@ -1,4 +1,4 @@
-#Sequencing
+# Sequencing
 
 ## [1] Biological samples
 1. Fecal sample 1 g 당 500ul RNAlater (Ambion)를 처리하여 -80℃에 보관한다. 
@@ -51,8 +51,10 @@ Optional; Qubit fluorometer (Thermo Fisher Scientific), Fragment analyzer
 *NanoDrop spectrophotometer도 사용 가능 하지만 정확한 농도 측정을 위해 Qubit fluorometer를 추천함
 19. Fragment analyzer를 활용하여 얻어진 RNA의 QC를 진행한다.
 
-![Fragment analyzer 활용 RNA sample 분석 결과 예시](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_2_1.png?raw=true)
-> Fragment analyzer 활용 RNA sample 분석 결과 예시 
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_2_1.png?raw=true" style="width:65%">
+  <figcaption><b>Fragment analyzer 활용 RNA sample 분석 결과 예시</b></figcaption>  
+</figure>
 
 20. 10X TURBO DNase buffer가 1X가 되도록 처리하고, TURBO DNase 1 μL와 RNA에 처리한다
 21. 37℃에 20-30분 반응시켜준다.

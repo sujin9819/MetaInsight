@@ -1,6 +1,9 @@
 # Differential (transcriptional) expression analysis 
 
-![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_8_1.png?raw=true)
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_8_1.png?raw=true" style="width:90%">
+  
+</figure>
 
 
 *다음과 같은 분석을 진행하기 위해서는 동일한 유전자세트를 가져야 함  
@@ -39,10 +42,14 @@ BiocManager::install("DESeq2")
 $wget https://raw.githubusercontent.com/sujin9819/ngs/main/R_scripts/RunDESeq_flow.R
 $ Rscript RunDESeq_flow.R –i $sample.count –d Design_sheet.txt –o output_directory     
 ```
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_8_2.png?raw=true" style="width:90%">
+  <figcaption><b>RunDESeq_flow.R 결과 파일 예시</b></figcaption>  
+</figure>
 
-![RunDESeq.R 결과](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_8_2.png?raw=true)
-> RunDESeq.R 결과 파일 예시
-![RunDESeq.R 결과2](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_8_3.png?raw=true)
-> RunDESeq.R 결과 파일을 이용하여 얻을 수 있는 결과 예시
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_8_3.png?raw=true" style="width:90%">
+  <figcaption><b>RunDESeq_flow.R 결과 파일을 이용하여 얻을 수 있는 결과 예시</b></figcaption>  
+</figure>
 
 뿐만 아니라 normalization을 거친 count 정보, Log2 Fold change, p-value와 같은 DESeq2 결과 값들을 R의 다양한 패키지를 이용하여 heatmap, volcano plot등을 통해 발현량 대한 정보를 시각화 하는 것이 가능하다. 

@@ -12,8 +12,10 @@
 ■ R package
 -DESeq2, ggplot2, pheatmap
 
-![Metatranscriptomics overview](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_4_1.png?raw=true)
-> Metatranscriptomics 분석 파이프라인
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_4_1.png?raw=true" style="width:90%">
+  <figcaption><b>Metatranscriptome 분석 파이프라인</b></figcaption>  
+</figure>
 
 # Installation
 분석 파이프라인 진행에 앞서 사용하는 프로그램 설치에 대해서 먼저 설명하겠다.

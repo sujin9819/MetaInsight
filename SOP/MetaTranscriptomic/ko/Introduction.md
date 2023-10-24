@@ -75,96 +75,96 @@
     <td>2013</td>
   </tr>
   <tr>
-    <td><a href="">TopHat2</a></td>
+    <td><a href="https://ccb.jhu.edu/software/tophat/manual.shtml">TopHat2</a></td>
     <td>bowtie 기반의 short read mapping</td>
     <td>2013</td>
   </tr>
   <tr>
     <td rowspan="6">DE analysis</td>
-    <td><a href="">Cuffdiiff2</a></td>
+    <td><a href="https://cole-trapnell-lab.github.io/cufflinks/manual/">Cuffdiiff2</a></td>
     <td>cufflink 연계 tool. sam(bam)파일을 이용하여 gene, isoform 수준에서 발현 비교 </td>
     <td>2013</td>
   </tr>
   <tr>
-    <td><a hre="">DESeq2</a></td>
+    <td><a href="https://bioconductor.org/packages/release/bioc/html/DESeq2.html">DESeq2</a></td>
     <td>R package, shrinkage estimation 기법을 이용. RLE(Relative Log Expression) normalization 사용</td>
     <td>2014</td>
   </tr>
   <tr>
-    <td><a hre="">EdgeR</a></td>
+    <td><a href="https://bioconductor.org/packages/release/bioc/html/edgeR.html">EdgeR</a></td>
     <td>R package, input파일로 raw count값을 사용. TMM(Trimmed Mean M-values) normalization 사용</td>
     <td>2010</td>
   </tr>
   <tr>
-    <td><a hre="">limma</a></td>
+    <td><a href="https://bioconductor.org/packages/release/bioc/html/limma.html">limma</a></td>
     <td>R package. 적은 수의 표본에 대해서 효과적이며 TMM normalization 사용</td>
     <td>2015</td>
   </tr>
   <tr>
-    <td><a hre="">NOISeq</a></td>
+    <td><a href="https://www.bioconductor.org/packages/release/bioc/html/NOISeq.html">NOISeq</a></td>
     <td>R package. 비모수적 접근 방식 및 RPKM/TMM/upper quartile normalization방식 사용</td>
     <td>2011</td>
   </tr>
   <tr>
-    <td><a hre="">SAMSeq</a></td>
+    <td><a href="https://github.com/jefferys/SamSeq">SAMSeq</a></td>
     <td>R package. sam 파일을 input파일로 사용하는 gene-level DE분석. 전체 count의 mean값을 기준으로 normalization 진행</td>
     <td>2013</td>
   </tr>
   <tr>
     <td rowspan="3"><em>de novo</em> assembly</td>
-    <td><a hre="">megahit</a></td>
+    <td><a href="https://github.com/voutcn/megahit">megahit</a></td>
     <td>Single genome assembly, multiple libraries 가능</td>
     <td>2015</td>
   </tr>
   <tr>
-    <td><a hre="">SPAdes</a></td>
+    <td><a href="https://cab.spbu.ru/software/spades/">SPAdes</a></td>
     <td>RNA, virus RNA, plasmid등 다양한 종류의 data assembly가능. fastq, fasta파일 뿐만 아니라 bam파일 input가능</td>
     <td>2012</td>
   </tr>
   <tr>
-    <td><a hre="">trinity</a></td>
+    <td><a href="https://github.com/trinityrnaseq/trinityrnaseq/wiki">trinity</a></td>
     <td>Transcriptome assembler</td>
     <td>2011</td>
   </tr>
   <tr>
     <td rowspan="4">Taxonomy assignment</td>
-    <td><a hre="">kaiju</a></td>
+    <td><a href="https://bioinformatics-centre.github.io/kaiju/">kaiju</a></td>
     <td>메타유전체의 전체 서열 또는 메타전사체의 서열을 GenBank protein non-redundant database를 이용하여 분석</td>
     <td>2016</td>
   </tr>
   <tr>
-    <td><a hre="">kraken</a></td>
+    <td><a hre="https://ccb.jhu.edu/software/kraken/MANUAL.html">kraken</a></td>
     <td>GenBank nucleotide non-redundant database를 이용하여 taxonomy 분석</td>
     <td>2014</td>
   </tr>
   <tr>
-    <td><a hre="">MetaPhlAn</a></td>
+    <td><a hre="https://huttenhower.sph.harvard.edu/metaphlan3/">MetaPhlAn</a></td>
     <td>종 수준에서 메타유전체 정보로부터 미생물 조성 분석. 자체적인 marker gene을 이용</td>
     <td>2012</td>
   </tr>
   <tr>
-    <td><a hre="">onecodex</a></td>
+    <td><a hre="https://www.onecodex.com/">onecodex</a></td>
     <td>Genome database와 targeted loci database를 이용한 web 기반 분석 도구</td>
     <td>2015</td>
   </tr>
   <tr>
     <td rowspan="4">Format transition</td>
-    <td><a hre="">BEDTools</a></td>
+    <td><a hre="https://bedtools.readthedocs.io/en/latest/">BEDTools</a></td>
     <td>bam 또는 bed 파일을 이용하는 소프트웨어. Raw count값을 얻을 수 있지만 후보정이 필요</td>
     <td>2010</td>
   </tr>
   <tr>
-    <td><a hre="">Cufflink</a></td>
+    <td><a hre="https://cole-trapnell-lab.github.io/cufflinks/manual/">Cufflink</a></td>
     <td>RNA-seq mapping결과(sam파일)를 assembly하고 abundance를 계산하는 도구로 FPKM값을 결과값으로 가짐</td>
     <td>2010</td>
   </tr>
   <tr>
-    <td><a hre="">HTSeq</a></td>
+    <td><a hre="https://htseq.readthedocs.io/en/release_0.11.1/index.html">HTSeq</a></td>
     <td>Python package, gff정보를 이용한 read mapping 계산</td>
     <td>2015</td>
   </tr>
   <tr>
-    <td><a hre="">SAMTools</a></td>
+    <td><a hre="https://www.htslib.org/">SAMTools</a></td>
     <td>sam 파일을 변환하거나 sorting하는 소프트웨어</td>
     <td>2009</td>
   </tr>
