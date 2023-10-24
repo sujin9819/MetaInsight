@@ -1,6 +1,9 @@
 # Translational expression profiling
 
-![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_8_1.png?raw=true)
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_8_1.png?raw=true" style="width:65%">
+  <figcaption><b> </b></figcaption>  
+</figure>
 
 
 Ribo-seq read alignment결과 count 정보를 이용하여 각 유전자의 발현량을 확인할 수 있다.
@@ -19,16 +22,22 @@ $ emapper.py (option) -i sample_MAG.prodigal.faa -o sample_MAG.eggnog.out
 ```
 결과 파일로는 eggnog.out.hit, eggnog.out.annotation, eggnog.out.seed_ortholog이 생성되며, 이 중 eggnog.out.annotation 파일이 COG, KEGG등 다양한 database의 annotation정보를 담고있다. 
 
-![eggnog](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_8_2.png?raw=true)
-> EGGNOG-mapper 결과 중 annotation 파일 예시  
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_8_2.png?raw=true" style="width:90%">
+  <figcaption><b>EGGNOG-mapper 결과 중 annotation 파일 예시</b></figcaption>  
+</figure>
 
 EGGNOG-mapper결과로 도출된COG정보를 활용하여, 전체 메타전사체에서 각 COG functional category의 발현 정도를 예측 가능하다. 
 
-![COG](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_8_3.png?raw=true)
-> COG 분포에 대한 예시  
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_8_3.png?raw=true" style="width:90%">
+  <figcaption><b>COG 분포에 대한 예시</b></figcaption>  
+</figure>
 
 또한 도출된 COG 혹은 KEGG ORTHOLOGY 정보를 KEGG mapper, IPATH3 [31]등의 툴을 활용하여 시각화가 가능하며, 발현량이 높은 유전자의 전체적인 상관관계를 유추 할 수 있다. 간단히 count값이 높은 유전자 몇 개만 선택해서 하거나 count값, 즉 발현량에 따라 선 굵기를 설정하거나 MAG별로 다른 색으로 표시하는 등 옵션에 따라 다양한 결과를 얻을 수 있다. 
 
-![ipath](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_8_4.png?raw=true)
-> iPATH3 결과 예시 
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_8_4.png?raw=true" style="width:70%">
+  <figcaption><b>iPATH3 결과 예시</b></figcaption>  
+</figure>
 

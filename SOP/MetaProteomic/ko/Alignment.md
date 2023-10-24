@@ -1,11 +1,17 @@
 # Reads alignment
 
-![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_1.png?raw=true)
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_1.png?raw=true" style="width:90%">
+  <figcaption><b> </b></figcaption>  
+</figure>
 
 
 메타유전체 분석 결과로 얻어진 data를 분석하는 방법 중 메타유전체 분석 결과로 얻어진 de novo assembled contig 및 metagenome-assembled genome (MAG)의 서열에 RNA-seq read들을 mapping하는 방식을 기반으로 하는 “reference-guided analysis” 방법을 먼저 소개하고자 한다. 
 
-![alignment](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_2.png?raw=true)
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_2.png?raw=true" style="width:90%">
+  <figcaption><b> </b></figcaption>  
+</figure>
 
 Pre-processing을 진행하여 sequence quality가 개선된 fastq 파일을 reference 시퀀스*에 mapping하여 alignment를 수행한다. 이때 STAR 프로그램을 이용하여 reference파일을 제작하고 만든 reference서열에 reads를 mapping하게 된다.
 - *Reference 시퀀스의 종류
@@ -41,8 +47,10 @@ IGV 프로그램으로 alignment결과를 확인하려면 메타유전체 de nov
 해당 파일들이 모두 import 되면 reference 서열에 CDS 정보 및 메타전사체 분석 sequence reads가 mapping 된 위치와 각 위치에 mapping 된 메타전사체 read count정보도 시각화하여 보여준다.  
 *gff (General Feature Format) 파일; MAG.fa에 대한 gff 파일 생성은 메타유전체 SOP 참고
 
-![IGV 결과](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_3.png?raw=true)
-> IGV 프로그램을 활용한 alignment 결과의 시각화 
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_3.png?raw=true" style="width:90%">
+  <figcaption><b>IGV 프로그램을 활용한 alignment 결과의 시각화 </b></figcaption>  
+</figure>
 
 ```bash
 # download prodigal from https://github.com/hyattpd/Prodigal/wiki/installation
@@ -74,5 +82,7 @@ $ bedtools bamtobed –i sample.bam > sample.bed
 $ bedtools coverage –a MAG.CDS.gff –b sample.bed –s > sample.cov
 
 
-![bedtools 결과](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_4.png?raw=true)
-> Read alignment 결과 생성된 bed 파일 (sample.cov) 예시
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_4.png?raw=true" style="width:90%">
+  <figcaption><b>Read alignment 결과 생성된 bed 파일 (sample.cov) 예시</b></figcaption>  
+</figure>

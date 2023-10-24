@@ -1,5 +1,8 @@
 # Small protein prediction
-![small protein prediction 과정](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_11_1.png?raw=true)
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_11_1.png?raw=true" style="width:65%">
+  <figcaption><b></b></figcaption>  
+</figure>
 
 Ribosome profiling 분석을 통해서 유전체나 전사체 분석에서 얻을 수 없었던 저분자 단백질에 대한 정보를 얻을 수 있다.
 저분자 단백질이란 70aa보다 작은 크기의 단백질을 말한다. 이러한 저분자 단백질들은 다른 유전자의 발현 조절 또는 미생물의 key factor와 관련된 유전자에 해당한다고 알려져 있으나 기능에 대한 분석을 하기가 쉽지 않은 편이다.

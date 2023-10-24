@@ -84,8 +84,10 @@ Optional; Qubit fluorometer (Thermo Fisher Scientific), Fragment analyzer
 26. Qubit fluorometer*로 RNA 농도를 측정한다.  
 *NanoDrop spectrophotometer도 사용 가능 하지만 정확한 농도 측정을 위해 Qubit fluorometer를 추천함
 27. Fragment analyzer를 활용하여 얻어진 RNA의 QC를 진행한다.
-![Fragment analyzer 활용 ribosome-bound mRNA 분석 결과 예시 ](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_2_1.png?raw=true)  
-> Fragment analyzer 활용 ribosome-bound mRNA 분석 결과 예시  
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_2_1.png?raw=true" style="width:90%">
+  <figcaption><b>Fragment analyzer 활용 ribosome-bound mRNA 분석 결과 예시</b></figcaption>  
+</figure>
 ※Fragment analyzer를 사용하여 RNA에서 mRNA뿐만 아니라 rRNA의 비율을 확인 가능하다. Transcriptome분석을 위한 mRNA와는 다르게 ribosome에 binding 된 짧은 길이가 mRNA와 작은 크기의 rRNA만 prep 된다.
 
 28. 10X TURBO DNase buffer가 1X가 되도록 처리하고, TURBO DNase 1 μL와 RNA에 처리한다

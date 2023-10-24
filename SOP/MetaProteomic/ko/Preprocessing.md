@@ -1,7 +1,9 @@
 # Preprocessing of the sequencing reads
 
-![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_5_1.png?raw=true)
-> Sequencing reads의 preprocessing 과정 
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_5_1.png?raw=true" style="width:90%">
+  <figcaption><b>Sequencing reads의 preprocessing 과정 </b></figcaption>  
+</figure>
 
 Ribosome-bound mRNA reads는 메타전사체 SOP 방법으로 추출된 mRNA 와 달리 RNA fragment의 길이가 짧아 다른 방식의 분석 과정이 필요하다.
 Trimming과 alignment (mapping)은 메타전사체 SOP에 명시된 방법과 동일하게 진행되지만 후 분석 방법에는 차이가 있다.  
@@ -23,5 +25,7 @@ $./fastqc
 #java에서 fastq파일 선택하여 확인가능
 ```
 
-![QC 결과 예시](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_5_2.png?raw=true)
-> FastQC로 raw sequence의 quality check 결과 예시 
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_0_1.png?raw=true" style="width:90%">
+  <figcaption><b>FastQC로 raw sequence의 quality check 결과 예시</b></figcaption>  
+</figure>
