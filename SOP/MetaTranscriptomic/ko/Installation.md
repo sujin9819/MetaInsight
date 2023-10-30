@@ -1,70 +1,58 @@
-# 메타전사체 분석 활용툴
-■ Sequencing reads trimming  
-- FastQC, cutadapt, trimGalore  
-■ 메타유전체 서열에 read 정렬  
-- Bowtie2[4]  
-■ 정렬된 정보를 다른형태의 파일로 변경 (file format: sam to cov)  
-- SamTools, bedtools  
-■ Functional annotation  
-- eggNOG-mapper  
-■ Visualization  
--iPATH3, KEGG-mapper, IGV  
-■ R package  
--DESeq2, ggplot2, pheatmap  
+## 메타유전체 분석 활용툴 
+- Preprocessing of the sequencing reads : Kneaddata, minimap2, samtools
+- Read-based profiling : HUMAnN 3.0, MetaPhlAn
+- De novo assembly : MEGAHIT, Quast, hifiasm_meta, Bandage
+- Taxonomic annotation : Kaiju
+- Functional annotation : Prodigal, EggNOG
+- Binning : MetaBAT2, BBmap, minimap2, samtools, CheckM
+- Phylogenetic tree construction : GTDB-tk, PhyloPhlAn3
 
 <figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_4_1.png?raw=true" style="width:90%">
-  <figcaption><b>Metatranscriptome 분석 파이프라인</b></figcaption>  
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_4_1.png?raw=true" style="width:90%">
+  <figcaption><b>메타유전체 분석 파이프라인</b></figcaption>  
 </figure>
 
 # Installation
-분석 파이프라인 진행에 앞서 사용하는 프로그램 설치에 대해서 먼저 설명하겠다.
-## conda 설치
-콘다는 가상의 환경으로 프로그램 설치 및 독립적으로 관리가 가능하다는 장점이 존재한다.
-프로그램 충돌과 관련된 문제를 비교적 줄일 수 있기 때문에 콘다 설치 가능 프로그램의 경우 콘다에 설치하는 것을 추천한다. 
 
+### An introduction to Conda
+메타 유전체 분석을 위해서는 다양한 분석 프로그램들을 설치해야 한다. 이때 프로그램들간의 충돌 또는 버전 의존성 문제가 발생할 수 있다.
+예를 들면, 프로그램 A는 특정 버전의 프로그램 B에 의존하는데 프로그램 C의 경우 다른 버전의 프로그램 B에 의존 할 경우 초보자들이 프로그램 C를 설치하기는 상당히 많은 노력과 시간이 필요하게 된다.
+이때 파이썬 패키지 및 환경 매니저 프로그램인 Conda를 이용하여 프로그램을 설치하면 이러한 특정 버전의 충돌 문제를 해결 할 수 있다.
+본 SOP에 사용되는 분석 툴들은 [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html)를 이용하여 설치하길 권장한다.
+
+### Making a new environment 
+프로그램 간의 충돌이 발생하지 않도록 프로그램을 설치 할 때마다 새로운 Conda 환경을 만드는 것을 권장한다. 새로운 Conda 환경을 만드는 방법의 예시는 아래와 같다
 ```bash
-# 사용할 conda 환경 설정하기기(이름 및 파이썬은 사용자가 설정)
-$ conda create --name NGS python=3.7
-# conda 환경 활성화
-$ conda activate NGS
-# conda 환경에 사용할 프로그램 설치
-$ conda install cutadapt				#cutadapt install
-$ conda install humann –c biobakery3		#humann install
-# download database
-$ humann_databases --download chocophlan full $INSTALL_LOCATION --update-config yes
-$ humann_databases --download uniref uniref90_diamond $INSTALL_LOCATION --update-config yes
-$ humann_databases --download utility_mapping full $INSTALL_LOCATION --update-config yes
-$ conda install bowtie2				#bowtie2 install
-$ make
+# Create a new conda environment
+$ conda create -n new-env 
+```
+`conda create` 라는 명령어를 입력 후 `-n` 을 사용하여 본인이 원하는 새 환경의 이름을 저장한다.
+### Entering & exiting an environment
+```bash
+# Enter that environment
+$ conda activate new-env
+# Exit whatever conda environment we are running
+$ conda deactivate
 ```
 
-## 프로그램 설치
-가상환경에 설치하여 독립적으로 관리가 가능한 콘다가 있는 반면 일부 프로그램은 여전히 직접 설치를 진행해야한다.
-따로 프로그램을 설치한 일부 프로그램의 경우, 프로그램 및 데이터베이스를 따로 bash_profile파일을 편집하여 $PATH를 추가 설정할 필요가 있다.
+다음 표는 본 SOP에서 사용되는 프로그램들의 설치코드의 예시와 Anaconda 주소이다. 'create –n' 다음의 환경이름은 사용자가 임의적으로 변경 가능하다. 
 
-```bash
-# 설치 폴더 생성 및 지정
-$ mkdir program
-$ cd program
-# SAMtools install
-$ tar -xvf samtools.zip
-$ cd samtools
-$ ./configure -prefix==/where/to/install
-$ make
-$ make install
-# install prodigal
-$ cd prodigal/
-$ make install
-#install bedtools
-$ tar -zxvf bedtools-2.29.1.tar.gz
-$ cd bedtools2
-# download eggnog-mapper from https://github.com/eggnogdb/eggnog-mapper/releases/latest
-$ tar -xvzf eggnog_mapper_(version).tar.gz
-# download eggnog-mapper database
-$ download_eggnog_data.py
-#install SPAdes
-$wget http://cab.spbu.ru/files/release3.15.3/SPAdes-3.15.3-Linux.tar.gz
-$tar -xzf SPAdes-3.15.3-Linux.tar.gz
-$cd SPAdes-3.15.3-Linux/bin/
-```
+| 분석 툴 | 설치 코드 | ANACONDA 주소
+| ------ | ------ | ------ |
+| KNEDDATA | `conda create -n kneaddata -c bioconda kneaddata` | https://anaconda.org/bioconda/kneaddata |
+| HUMANN3.0 | `conda create -n humann -c biobakery humann` | https://anaconda.org/biobakery/humann |
+| METAPHLAN3.0 | `conda create –n metaphlan -c bioconda metaphlan` | https://anaconda.org/bioconda/metaphlan |
+| MEGAHIT | `conda create –n MEGAHIT -c bioconda MEGAHIT` | https://anaconda.org/bioconda/MEGAHIT |
+| QUAST | `conda create –n quast -c bioconda quast` | https://anaconda.org/bioconda/quast |
+| KAIJU | `conda create –n kaiju -c bioconda kaiju` | https://anaconda.org/bioconda/kaiju |
+| MINIMAP2 | `conda create –n minimap2 -c bioconda minimap2` | https://anaconda.org/bioconda/minimap2 |
+| HIFIASM_META | `conda create –n hifiasm_meta -c bioconda hifiasm_meta` | https://anaconda.org/bioconda/hifiasm_meta |
+| KRONA | `conda create –n krona -c bioconda krona` | https://anaconda.org/bioconda/krona |
+| PRODIGAL | `conda create –n prodigal -c bioconda prodigal` | https://anaconda.org/bioconda/prodigal |
+| EGGNOG | `conda create –n eggnog -c bioconda eggnog-mapper` | https://anaconda.org/bioconda/eggnog-mapper |
+| METABAT2 | `conda create –n MetaBAT2 -c bioconda MetaBAT2` | https://anaconda.org/bioconda/MetaBAT2 |
+| BBMAP | `conda create –n bbmap -c bioconda bbmap` | https://anaconda.org/bioconda/bbmap |
+| SAMTOOLS | `conda create –n samtools -c bioconda samtools` | https://anaconda.org/bioconda/samtools |
+| CHECKM | `conda create -n CheckM python=3.9` <br> `conda activate CheckM` <br>`conda install -c bioconda numpy matplotlib pysam`<br>`conda install -c bioconda hmmer prodigal pplacer`<br>`pip3 install CheckM-genome` | https://anaconda.org/bioconda/CheckM-genome |
+| GTDB-TK | `conda create -n gtdbtk-2.1.1 -c conda-forge -c bioconda gtdbtk=2.1.1` | https://anaconda.org/bioconda/gtdbtk |
+| PHYLOPHLAN3 | `conda create –n phylophlan -c bioconda phylophlan` | https://anaconda.org/bioconda/phylophlan |

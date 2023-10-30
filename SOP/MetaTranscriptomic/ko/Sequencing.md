@@ -1,83 +1,43 @@
-# Sequencing
 
+# I. Preparation for sequencing
 ## [1] Biological samples
-1. Fecal sample 1 g 당 500ul RNAlater (Ambion)를 처리하여 -80℃에 보관한다. 
+- 분변 채취용 키트 (NBG-4, Noble Biosciences)의 검채용 스푼과 스패츌러를 이용하여 fecal sample을 채취한 뒤 잘 흔들어 주어 검체를 균일하게 해준 뒤 -80℃에 보관한다. 
 
-## [2] RNA preparation
+
+## [2.1] DNA preparation for short reads sequencing
+### Reagents  
+**FastDNA SPIN Kit for Feces (MP Biomedicals)**  
+- Sodium Phosphate Buffer (MP Biomedicals), MT Buffer (MP Biomedicals), PLS Solution (MP Biomedicals), PPS Solution (MP Biomedicals), Wash Buffer #1(MP Biomedicals), Wash Buffer #2 (MP Biomedicals), TES (MP Biomedicals), 100% ethanol
+
+
+### DNA extraction  
+- Fume hood에서 전자저울과 멸균된 스패츌러를 이용하여 아이스에 꽂아 둔 분변 샘플 500mg을 Lysing matrix E tube에 옮긴다. 
+- 825 μl의 sodium phosphate buffer와 825 μl의 PLS 솔루션을 넣고 뚜껑을 닫은 뒤 샘플이 튜브안에서 풀어지도록 10-15초간 vortexing 한다.
+- 샘플을 14,000ⅹg로 5분동안 원심분리 한 후 상층액을 버린다.
+- 978 μl의 sodium phosphate buffer와 122 μl의 MT buffer를 넣은 후 다시 샘플이 풀어질 때 까지 voltexing한다.
+- FastPrep 24 기기와 같은 beadbeater를 이용하여 6.0m/s 속도로 40초간 샘플을 파쇄 및 균질화 한다. (만약 크기가 큰 debris 때문에 파쇄가 충분하지 않았다고 판단되면,, 모든 샘플에 동일한 조건으로 추가 파쇄를 진행하되 진동 때문에 발생하는 열에 주의하며 충분히 interval을 두도록 한다.) 
+- 샘플을 14,000ⅹg로 5분동안 원심분리 한 후 상층액을 2ml tube로 옮긴다.
+- 250 μl의 PPS solution을 첨가한 뒤 천천히 inverting한 뒤 (vortexing 금지) 4℃에서 10분간 보관했다가 2분동안 14,000ⅹg로 원심분리 한다.
+- 원심분리 하는 동안 binding matrix solution 1 ml을 15 ml conical tube에 옮겨놓는다.
+- 원심분리가 끝난 샘플의 상층액을 binding matrix solution을 넣었던 15 ml tube에 옮기고 inverting한 다음 내용물이 충분히 섞일 수 있는 각도로 shaker에 3-5분동안 놔둔다.
+- Shaking incubator에 샘플이 충분히 잘 섞일 수 있는 각도로 tube를 꽂은 뒤 3-5분동안 놔둔다.
+- 2분동안 14,000ⅹg로 원심분리 한 후 상층액을 버린다.
+- 1 ml의 wash buffer #1을 넣고 부드럽게 pellet을 재현탁 한다.
+- SPIN filter tube에 binding matrix와 wash buffer #1 혼합액을 600 μl 옮긴 뒤 1분동안 14,000ⅹg로 원심분리 한 후 catch tube를 비운 뒤 다시 남은 용액을 옮겨 원심분리 한다. 이후 catch tube를 다시 비운다.
+- 500 μl의 wash buffer #2 (에탄올이 첨가된)를 SPIN filter tube에 넣고 부드럽게 pipetting 후 resuspension한다 (vortexing 금지).
+- 2분동안 14,000ⅹg로 원심분리 한 후 catch tube를 비운다.
+- 다시 2분동안 14,000ⅹg로 원심분리 한 하여 pellet에 남아있는 잔여 wash buffer를 날려 dry한 상태가 되도록 한다.
+- SPIN filter 버켓을 새 1.9 ml catch tube로 옮긴 뒤 60-100 μl의 TES 용액을 첨가한다. 손 끝을 이용하여 pellet이 용액과 섞이도록 tapping 한다. (vortexing 금지)
+- 2분동안 14,000ⅹg로 원심분리 하여 pellet에서 DNA를 elution한다. 
+- Nano drop을 이용하여 정량한 뒤 -20℃에 얼려서 보관한다.
+
+## [2.2] DNA preparation for long reads seqencing
 ### Reagents
--RLT buffer (Qiagen), β-mercaptoethanol, Superase-In 20U/μL (Thermo Fisher Scientific), proteinase K (20mg/mL), 100% ethanol, 70% ethanol, 3M sodium acetate, phenol/chloroform/isoamyl alcohol 25:24:1 (pH5.2), RNase-free water
--kit RNeasy mini plus kit (Qiagen), TURBO DNA-free™ (Ambion) 
-
-### Equipment  
-FastPrep-24™ 5G(MP), pipette, aerosol barrier pipette tips, microcetrifuge, 1mm zirconia/silica beads  
-Optional; Qubit fluorometer (Thermo Fisher Scientific), Fragment analyzer  
-
-### Stock solutions
-
-| Stock solution A | volume |
-| --- | ---|
-| RLT buffer(Qiagen) | 975 μL |
-| β-mercaptoethanol | 10 μL |
-| Superase-In, 20U/μL | 15 μL |
-| Total | 1 ml |
-
-### RNA preparation
-1. 각 screw-top tube에 fecal sample과 bead를 넣고 반응액을 처리한다.  
-| Each tube | volume |
-| --- | --- |
-| Fecal sample | 150mg |
-| 1.0mm zirconia/silica beads | ~20 |
-| Stock solution A | 600 μL |
-
-2. FastPrep-24™ 6.0m/s 40초 두 번 진행한다.
-3. 12,000 rpm에서 3분간 원심분리 후, 상층액 600 μL를 e-tube 로 옮긴다.
-4. Proteinase K 15 μL를 처리하고 상온에서 10분 반응시켜준다.
-5. 12,000 rpm에서 3분간 원심분리 후, 상층액을 새 e-tube로 옮긴다.
-6. 상층액과 같은 양의 phenol/chloroform/isoamyl alcohol 25:24:1을 처리하고 3분 vortexing한다.
-7. 12,000 rpm에서 3분간 원심분리 후, 상층액을 새 e-tube로 옮기는 과정을 두 번 진행한다.
-8. 상층액의 0.1배 volume의 3M sodium acetate와 2.5배 volume의 ethanol을 처리하고 30분 ice에서 반응시킨다
-9. 12,000 rpm 4℃에서 30분간 원심분리 후, 상층액을 제거한다.
-10. 100 μL 증류수로 pellet을 재현탁하고 RNeasy plus mini kit의 RLT plus buffer 600 μL를 처리한다
-11. `10`의 용액을 RNeasy plus mini kit의 gDNA eliminator spin column에 처리한다.
-12. 12,000 rpm에서 30초간 원심분리 후 column을 버리고 통과액에 1:1 비율로 70% ethanol을 처리한다.
-13. RNeasy spin column에 `12`의 용액 700 μL를 옮기고 12,000 rpm에서 15초 원심분리 후 통과액을 버린다.
-14. RW1 buffer 700 μL를 column에 처리하고 12,000 rpm에서 15초 원심분리 후 통과액을 버린다.
-15. RPE buffer 500 μL를 column에 처리하고 12,000 rpm에서 15초 원심분리 후 통과액을 버린다.
-16. RPE buffer 500 μL를 column에 처리하고 12,000 rpm에서 2분 원심분리 후 column을 새 e-tube에 옮긴다.
-17. RNase-free water 30~50 μL를 column의 membrane에 처리하여 12,000 rpm에서 1분 원심분리 후 RNA를 얻는다.
-
-[Optional: RNA QC]
-18. Qubit fluorometer*로 RNA 농도를 측정한다.  
-*NanoDrop spectrophotometer도 사용 가능 하지만 정확한 농도 측정을 위해 Qubit fluorometer를 추천함
-19. Fragment analyzer를 활용하여 얻어진 RNA의 QC를 진행한다.
-
-<figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_2_1.png?raw=true" style="width:65%">
-  <figcaption><b>Fragment analyzer 활용 RNA sample 분석 결과 예시</b></figcaption>  
-</figure>
-
-20. 10X TURBO DNase buffer가 1X가 되도록 처리하고, TURBO DNase 1 μL와 RNA에 처리한다
-21. 37℃에 20-30분 반응시켜준다.
-22. 0.1배의 DNase inactivation reagent를 처리한다.
-23. 상온에서 5분 반응시켜준다
-24. 10,000rpm에서 1분 30초 원심분리 후 상층액을 새 e-tube에 옮긴다.
-
-### rRNA depletion
--Host rRNA 제거 Illumina TruSeq Stranded Total RNA Library Prep Plant Kit (Illumina, # 20020611)
--Bacterial rRNA 제거 Illumina Stranded Total RNA Library Prep with Ribo-Zero Plus kit (Illumina, #20040529)
+**QIAamp PowerFecal DNA kit (Qiagen)**  
+(Long read 시퀀싱을 위해서 DNA 양이 많이 필요하며, DNA fragmentation을 최소화해야하기 때문에, PacBio사에서 추천하는 **QIAamp PowerFecal DNA kit** (Qiagen)를 사용하였다.)
 
 
-## [3] Sequencing
-### Sequencing library preparation  
--Divalent cations을 활용하여 mRNA fragmentation 수행  
--First strand cDNA 합성 SuperScript II reverse transcriptase (Invitrogen, #18064014), random primers 활용  
--Second strand cDNA 합성DNA Polymerase I, RNase H, dUTP  
--합성된 cDNA fragments로 end repair 진행, single ‘A’ 염기 부착 후 adaptor ligation  
--cDNA library 제작을 위한 PCR 수행  
-*Sequencing library의 quantification 진행  
-KAPA Library Quantificatoin kits for Illumina Sequecing platforms according to the qPCR Quantification Protocol Guide (KAPA BIOSYSTEMS, #KK4854)  
-*Sequencing library의 QC 진행  
-TapeStation D1000 ScreenTape (Agilent Technologies, # 5067-5582)   
+### DNA extraction
+키트 제조사의 프로토콜을 따라 분변으로부터 DNA extraction을 수행하였음.
 
-### Sequencing  
--Indexing 된 최종 sequencing library로 Illumina NovaSeq (Illumina) 장비로 paired-end (2×150 bp) sequencing 수행함  
+
