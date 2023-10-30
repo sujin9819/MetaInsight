@@ -7,25 +7,30 @@
 - Binning : MetaBAT2, BBmap, minimap2, samtools, CheckM
 - Phylogenetic tree construction : GTDB-tk, PhyloPhlAn3
 
-![메타유전체 분석 파이프라인](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_4_1.png?raw=true)
-> 메타유전체 분석 파이프라인
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_4_1.png?raw=true" style="width:90%">
+  <figcaption><b>메타유전체 분석 파이프라인</b></figcaption>  
+</figure>
 
 # Installation
 
 ### An introduction to Conda
-메타 유전체 분석을 위해서는 다양한 분석 프로그램들을 설치해야 한다. 이때 프로그램들간의 충돌 또는 버전 의존성 문제가 발생할 수 있다.
-예를 들면, 프로그램 A는 특정 버전의 프로그램 B에 의존하는데 프로그램 C의 경우 다른 버전의 프로그램 B에 의존 할 경우 초보자들이 프로그램 C를 설치하기는 상당히 많은 노력과 시간이 필요하게 된다.
-이때 파이썬 패키지 및 환경 매니저 프로그램인 Conda를 이용하여 프로그램을 설치하면 이러한 특정 버전의 충돌 문제를 해결 할 수 있다.
-본 SOP에 사용되는 분석 툴들은 Conda를 이용하여 설치하길 권장한다. 아래의 사이트는 Conda에 대한 공식문서 사이트이다.
-[https://docs.conda.io/projects/conda/en/latest/user-guide/index.html]
+Metagenomic analysis necessitates the installation of various analysis programs, a process that can sometimes result in conflicts or version dependencies between these programs.
+For instance, when program A relies on a specific version of program B, and program C depends on a different version of program B, it can be challenging and time-consuming for beginners to set up program C.
+In such scenarios, conda, a Python package and environment management tool, offers an effective solution for resolving these version conflicts.
+
+For this Standard Operating Procedure (SOP), we recommend installing the analysis tools using conda.
+You can find the official documentation for conda at the following [website](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html).
+This approach ensures a smoother and more efficient installation process, making metagenomic analysis more accessible and less prone to compatibility issues.
 
 ### Making a new environment 
-프로그램 간의 충돌이 발생하지 않도록 프로그램을 설치 할 때마다 새로운 Conda 환경을 만드는 것을 권장한다. 새로운 Conda 환경을 만드는 방법의 예시는 아래와 같다
+It is highly recommended to create a new conda environment every time you install a program. Doing so helps to avoid conflicts between programs and ensures a clean, isolated environment for each analysis tool.
+An example of how to create a new conda environment is provided below.
 ```bash
 # Create a new conda environment
 $ conda create -n new-env 
 ```
-`conda create` 라는 명령어를 입력 후 `-n` 을 사용하여 본인이 원하는 새 환경의 이름을 저장한다.
+Use the `conda create` command with the `-n` flag to designate and save the name of your new environment.
 ### Entering & exiting an environment
 ```bash
 # Enter that environment
@@ -34,9 +39,9 @@ $ conda activate new-env
 $ conda deactivate
 ```
 
-다음 표는 본 SOP에서 사용되는 프로그램들의 설치코드의 예시와 Anaconda 주소이다. create –n 다음의 환경이름은 사용자가 임의적으로 변경 가능하다. 
+The table below provides example installation codes and Anaconda addresses for the programs used in this SOP. 
 
-| 분석 툴 | 설치 코드 | ANACONDA 주소
+| Program | Installation code | ANACONDA addresses |
 | ------ | ------ | ------ |
 | KNEDDATA | `conda create -n kneaddata -c bioconda kneaddata` | https://anaconda.org/bioconda/kneaddata |
 | HUMANN3.0 | `conda create -n humann -c biobakery humann` | https://anaconda.org/biobakery/humann |
