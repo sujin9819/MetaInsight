@@ -9,11 +9,11 @@ Metagenome dataset의 taxonomic profiling방식은 크게 3가지로 나뉠 수 
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_8_2.png?raw=true" style="width:90%">
-  <figcaption><b>>Comparison of the taxonomic classification tools ; <a href="">ref</a></b></figcaption>  
+  <figcaption><b>>Comparison of the taxonomic classification tools ; <a href="https://doi.org/10.1016/j.cell.2019.07.010">[ref]</a></b></figcaption>  
 </figure>
 
 각 프로그램들은 장단점이 존재하는데, DNA-to-DNA 방법은 프로그램들이 메모리 소모가 적고 매우 속도가 빠르지만 DNA-to-protein 방식보다는 민감도가 떨어진다. 반면, DNA-to-protein 방법은 속도가 매우 느리고 메모리와 CPU의 소모가 크지만 amino acid 시퀀스 기반이기 때문에 매우 민감하고 정확도가 높다. 때문에 분석하려는 데이터의 특성과 목적, 그리고 데이터베이스에 따라서 최적의 프로그램을 사용해야 한다. Kaiju는 DNA-to-protein 프로그램 중 가장 대표적인 프로그램으로써 NCBI taxonomy와 protein reference database를 사용하며 미생물과 바이러스 classification이 가능하다.  
-Kaiju [10]프로그램을 사용하기 위해서는 데이터베이스를 다운로드 받아야 하며 컴퓨터의 성능에 따라 시간이 오래 소요될 수 있다. 사용 가능한 데이터베이스는 다음 표와 같다.
+[Kaiju](https://bioinformatics-centre.github.io/kaiju/) 프로그램을 사용하기 위해서는 데이터베이스를 다운로드 받아야 하며 컴퓨터의 성능에 따라 시간이 오래 소요될 수 있다. 사용 가능한 데이터베이스는 다음 표와 같다.
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_8_3.png?raw=true" style="width:90%">
   <figcaption><b></b></figcaption>  

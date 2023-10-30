@@ -8,12 +8,12 @@
 Read-based profiling은 빠른 시간 내에 metagenome에 대한 전반적인 분석결과를 제공할 수 있지만 시퀀서의 발달에도 불구하고 sequence read length가 짧기 때문에 database 상에 alignment되지 못하는 unmapped read들이 다량 존재한다.
 때문에 assembler를 사용하여de novo assembly를 수행하게 되면 overlapping 되는 reads가 길게 이어져 contig혹은 scaffolds를 형성하고 유전체 성분의 심도 있는 profiling이 가능하며 database와 무관한 프로세스이기 때문에 기존에 알려지지 않은 새로운 서열의 정보 또한 얻을 수 있다.  
 현재 다양한 방법과 퍼포먼스를 보이는 어셈블러들이 존재하고 있고 특히 short read 를 assemble 하는데 용이한 프로그램들이 많이 활용되고 있다.
-가장 광범위하게 쓰이는 assembler로는 MEGAHIT [4]과 metaSPAdes [5]가 있는데, 높은 depth를 가지는 sample일수록 metaSPAdes가 좋은 퍼포먼스를 보인다고 알려져 있지만 작은 샘플 수에도 고용량의 메모리가 필요하기 때문에 그의 대체 프로그램으로 MEGAHIT이 많은 연구에서 사용되고 있다 [6].  
-MEGAHIT은 k-mer 를 사용하는데 --k-min과 --k-max 옵션을 사용하여 샘플의 복잡도에 따라 크기를 설정해 줄 수 있다.
-만약 샘플의 depth가 매우 크다면 de Bruijn graph의 복잡도가 지나치게 증가할 수 있어 상대적으로 큰 k-mer를 설정 (25-31)해 주는 것이 좋다. 반대로 depth가 매우 낮아 assembly가 잘 되지 않는다면 --no-mercy 옵션을 사용하여 낮은 read들의 assemble 효율을 높일 수 있다.
-Paired end read라면 반드시 -1과 -2로 forward와 reverse read 파일명을 따로 지정해주어야 하며 single read일땐 -r 옵션을 사용한다.
-de Bruijn graph구성에 사용되는 최대 메모리는 옵션 –m으로 설정 할 수 있으며 0-1사이로 시스템 총 메모리를 설정 할 수 있다.
-기본값은 0.9로 설정 되어 있다. –t 옵션은 CPU thread 수를 설정해주는 옵션이며 최소 2개 이상 지정해줘야 하며 기본값은 서버가 이용가능한 모든 CPU thread수를 자동으로 계산하여 총 동원 할 수 있게 설정해준다.
+가장 광범위하게 쓰이는 assembler로는 [MEGAHIT](https://github.com/voutcn/megahit)과 [metaSPAdes](https://cab.spbu.ru/software/meta-spades/)가 있는데, 높은 depth를 가지는 sample일수록 metaSPAdes가 좋은 퍼포먼스를 보인다고 알려져 있지만 작은 샘플 수에도 고용량의 메모리가 필요하기 때문에 그의 대체 프로그램으로 MEGAHIT이 많은 연구에서 사용되고 있다 [&#91;ref&#93;](https://doi.org/10.1038/s41596-020-00480-3).  
+MEGAHIT은 k-mer 를 사용하는데 `--k-min`과 `--k-max` 옵션을 사용하여 샘플의 복잡도에 따라 크기를 설정해 줄 수 있다.
+만약 샘플의 depth가 매우 크다면 de Bruijn graph의 복잡도가 지나치게 증가할 수 있어 상대적으로 큰 `k-mer`를 설정 (25-31)해 주는 것이 좋다. 반대로 depth가 매우 낮아 assembly가 잘 되지 않는다면 `--no-mercy` 옵션을 사용하여 낮은 read들의 assemble 효율을 높일 수 있다.
+Paired end read라면 반드시 `-1`과 `-2`로 forward와 reverse read 파일명을 따로 지정해주어야 하며 single read일땐 `-r` 옵션을 사용한다.
+de Bruijn graph구성에 사용되는 최대 메모리는 옵션 `–m`으로 설정 할 수 있으며 `0-1`사이로 시스템 총 메모리를 설정 할 수 있다.
+기본값은 `0.9`로 설정 되어 있다. `–t` 옵션은 CPU thread 수를 설정해주는 옵션이며 최소 2개 이상 지정해줘야 하며 기본값은 서버가 이용가능한 모든 CPU thread수를 자동으로 계산하여 총 동원 할 수 있게 설정해준다.
 
 ```bash
 # run MEGAHIT 

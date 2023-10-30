@@ -29,7 +29,7 @@ $ conda deactivate
   <figcaption><b></b></figcaption>  
 </figure>
 
-GTDB-tk [23] 이외에도 최근 많이 사용되는 프로그램으로 PhyloPhlAn [24]이 있으며 매우 정확하고 빠를뿐만 아니라 간단한 커맨드라인으로 대용량의 미생물 유전체를 characterization 및 phylogenetic tree를 만들 수 있으며 간단한 visualization을 할 수 있는 커맨드도 제공한다. 
+[GTDB-tk](https://ecogenomics.github.io/GTDBTk/index.html) 이외에도 최근 많이 사용되는 프로그램으로 [PhyloPhlAn](https://huttenhower.sph.harvard.edu/phylophlan)이 있으며 매우 정확하고 빠를뿐만 아니라 간단한 커맨드라인으로 대용량의 미생물 유전체를 characterization 및 phylogenetic tree를 만들 수 있으며 간단한 visualization을 할 수 있는 커맨드도 제공한다. 
 
 ```bash
 $ conda activate phylophlan3
@@ -39,7 +39,7 @@ $ conda deactivate
 ```
 PhyloPhlAn 3.0의 phylophlan_metagenomic 명령어를 사용하면 메타게놈 어셈블리 분석에서 나온 각 Bin에 대해서 가장 가까운 species-level genome bins (SGBs)을 할당 할 수 있다.
 이 명령어를 수행할 때 `–nproc` 옵션을 통해 CPU thread 수를 조정할수 있으며, `-n` 옵션을 통해서는 각 입력되는 Bin에 대해 보고할 SGB의 수를 결정 할 수 있으며 기본 값은 10이다.
-phylophlan_metagenomic 명령어의 결과파일 3가지 이며 이중 bin들의 평균Mash distance에 따라 SGBs들의 리스트를 제공하는 결과파일은 phylophlan_draw_metagenomic 명령어를 통해 heatmap으로 시각화 될 수 있고 이때 `--map` 옵션에 들어가는 Bin들에 대한 mapping 파일은 `.tsv` 파일 형식을 갖는다.
+phylophlan_metagenomic 명령어의 결과파일 3가지 이며 이중 bin들의 평균 Mash distance에 따라 SGBs들의 리스트를 제공하는 결과파일은 phylophlan_draw_metagenomic 명령어를 통해 heatmap으로 시각화 될 수 있고 이때 `--map` 옵션에 들어가는 Bin들에 대한 mapping 파일은 `.tsv` 파일 형식을 갖는다.
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_11_3.png?raw=true" style="width:90%">
   <figcaption><b></b></figcaption>  

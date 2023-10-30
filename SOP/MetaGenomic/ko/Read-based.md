@@ -32,7 +32,9 @@ $ humann3 --input kneaddata.trimmed.fastq --output humann3_out/ --nucleotide-dat
   <figcaption><b></b></figcaption>  
 </figure>
 
-서로 다른 시퀀싱 depth를 가지는 샘플들끼리 gene family들을 비교하기 위해서 relative abundance 수치 (relab)를 구하거나 유전자의 copy number를 백만read로 나누는 counts per million (CPM) 수치를 구하여 normalization을 수행할 수 있다. 이는 Human_renorm_table 커맨드에서 –-units 옵션에서 cpm 또는 relab으로 정해주면 된다.
+서로 다른 시퀀싱 depth를 가지는 샘플들끼리 gene family들을 비교하기 위해서 relative abundance 수치 (relab)를 구하거나 유전자의 copy number를 백만 read로 나누는 counts per million (CPM) 수치를 구하여 normalization을 수행할 수 있다.
+이는 `Human_renorm_table` 커맨드에서 `–-units` 옵션에서 `cpm` 또는 `relab`으로 정해주면 된다.
+
 ```bash
 # Normalization 
 $ humann_renorm_table --input Trimmed_paired_merged_genefamilies.tsv --output Trimmed_paired_merged_genefamilies_relab.tsv --units cpm
@@ -52,7 +54,8 @@ $ humann_barplot --input Trimmed_paired_merged_genefamilies_relab.tsv --output p
 # Generate sorted barplot by bray-curtis distance and facetted by genera
 $ humann_barplot --input Trimmed_paired_merged_genefamilies_relab.tsv --output plot3_sorted_facetted.png --focal-feature COA-PWY -–sort braycurtis –-as-genera –-remove-zeros
 ```
-Reaction 단위로 그룹화 이후 특정 reaction을 plotting할 수 있으며 전체 abundance의 합을 기준으로 하거나 또는Bray-Curtis 거리 기준으로 bar graph들을 sorting하거나 genera 단위로 faceting 할 수 있다.
+
+Reaction 단위로 그룹화 이후 특정 reaction을 plotting할 수 있으며 전체 abundance의 합을 기준으로 하거나 또는 Bray-Curtis 거리 기준으로 bar graph들을 sorting하거나 genera 단위로 faceting 할 수 있다.
   
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_6_4.png?raw=true" style="width:90%">

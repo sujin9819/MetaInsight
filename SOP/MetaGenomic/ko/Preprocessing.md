@@ -7,7 +7,8 @@
 
 ## Short reads
 
-Raw sequence data의 quality control 작업을 위해서는 (1) low quality bases 제거, (2) Artifact 제거 (barcodes, adaptors, chimeras)가 이루어져야 한다. [KneadData](https://bitbucket.org/biobakery/kneaddata) 는 Trimmomatic [1] (quality filtering/trimming)과 Tandem Repeat Finder (TRF), 그리고 FastQC 와 read align을 위한 Bowtie2 [2]를 사용하여 read preprocessing을 진행한다.
+Raw sequence data의 quality control 작업을 위해서는 (1) low quality bases 제거, (2) Artifact 제거 (barcodes, adaptors, chimeras)가 이루어져야 한다.
+[KneadData](https://bitbucket.org/biobakery/kneaddata) 는 [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic) (quality filtering/trimming)과 Tandem Repeat Finder (TRF), 그리고 FastQC 와 read align을 위한 [Bowtie2](https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml)를 사용하여 read preprocessing을 진행한다.
 Trimmomatic 진행 시 --trimmomatic-options="MINLEN:"을 통해 서열길이의 최소길이를 input read의 percentage로 지정할 수 있다.x
 
 ```bash
@@ -38,7 +39,7 @@ $ conda deactivate
 
 Short read에서 사용되는 mapping 방법은 long read에서는 적합하지 않다. Short read의 mapping에는 주로 seed-and-extend 방법을 통해 mapping이 이루어진다. Seed-and-extend 방법은 일반적으로 단일 base의 일치를 기반으로 확장(extend)하는데 long read 에서는 read 전체에서 여러 일관된 일치가 필요하기 때문에 long read에서의 seed-and-extend 방법의 적용은 연장과 정확성에 문제가 발생할 수 있다.
 이러한 한계를 극복하기 위해 seed-and-chain과 같은 방법이 개발되었다.   
-minimap2는 다목적 시퀀스 mapping 프로그램으로서,  PacBio와 Oxford Nanopore technologies와 같은 긴 리드를 정렬하고 분석하는데 효과적이다. 본 파이프라인에서는 minimap2를 사용하여 long read mapping을 진행하고자 한다.
+[minimap2](https://github.com/lh3/minimap2)는 다목적 시퀀스 mapping 프로그램으로서,  PacBio와 Oxford Nanopore technologies와 같은 긴 리드를 정렬하고 분석하는데 효과적이다. 본 파이프라인에서는 minimap2를 사용하여 long read mapping을 진행하고자 한다.
 
 ```bash
 $ conda install -c bioconda minimap2

@@ -15,9 +15,9 @@ $ prodigal -i final.contigs.fa -p meta -a final.contigs.prodigal.faa -d final.co
 $ conda deactivate
 ```
 
-Gene prediction이 완료된 contig 파일은 다양한 데이터베이스를 기반으로 functional annotation이 가능한데 가장 대표적으로 KEGG [11] 혹은 COG [12], metaCyc [13] 데이터베이스를 통해 유전자의 기능을 유추할 수 있으며 CAZyme [14] 이나 ARDB [15]와 같은 특수 데이터베이스 또한 활용이 가능하다.
-eggNOG-mapper [16]는 가장 광범위하게 쓰이는 functional annotation 프로그램으로써 European Molecular Biology Laboratory (EMBL)에서 제작한 ortholog와 phylogeny를 기반으로 제작된 eggNOG  database를 사용하여 novel 시퀀스의 빠른 functional annotation을 수행할 수 있다.
-eggNOG-mapper 외에도 추가로 사용할 수 있는 tool로는 간단한 BLAST 혹은 InterProScan [17]과 같은 프로그램이 있다.
+Gene prediction이 완료된 contig 파일은 다양한 데이터베이스를 기반으로 functional annotation이 가능한데 가장 대표적으로 [KEGG](https://www.genome.jp/kegg/) 혹은 [COG](https://www.ncbi.nlm.nih.gov/research/cog-project/), [metaCyc](https://metacyc.org/) 데이터베이스를 통해 유전자의 기능을 유추할 수 있으며 [CAZyme](http://www.cazy.org/) 이나 [ARDB](https://ardb.cbcb.umd.edu/)와 같은 특수 데이터베이스 또한 활용이 가능하다.
+[eggNOG-mapper](https://github.com/eggnogdb/eggnog-mapper)는 가장 광범위하게 쓰이는 functional annotation 프로그램으로써 European Molecular Biology Laboratory (EMBL)에서 제작한 ortholog와 phylogeny를 기반으로 제작된 eggNOG  database를 사용하여 novel 시퀀스의 빠른 functional annotation을 수행할 수 있다.
+eggNOG-mapper 외에도 추가로 사용할 수 있는 tool로는 간단한 BLAST 혹은 [InterProScan](https://www.ebi.ac.uk/interpro/search/sequence/)과 같은 프로그램이 있다.
 
 
 ```bash
@@ -30,10 +30,10 @@ $ emapper.py -m diamond --cpu 5 -i final.contig.prodigal.faa -o eggnog.out
 $ conda deactivate
 ```
 
-▶report.html 결과 예시
+
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_9_2.png?raw=true" style="width:90%">
-  <figcaption><b></b></figcaption>  
+  <figcaption><b>report.html 결과 예시</b></figcaption>  
 </figure>
 
 [eggNOG-mapper](http://eggNOG-mapper.embl.de/)는 stand alone버전 외에도 간단하게 web 상에서 분석할 수 있는 서비스를 제공하며 FASTA 포맷 내에서 최대 1000,000개의 protein까지 input으로 수용이 가능하다. 
