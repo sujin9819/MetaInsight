@@ -1,27 +1,32 @@
 # Preprocessing of the sequencing reads
 
-![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_5_1.png?raw=true)
-> Sequencing reads의 preprocessing 과정 
+# Preprocessing of the sequencing reads
 
-Ribosome-bound mRNA reads는 메타전사체 SOP 방법으로 추출된 mRNA 와 달리 RNA fragment의 길이가 짧아 다른 방식의 분석 과정이 필요하다.
-Trimming과 alignment (mapping)은 메타전사체 SOP에 명시된 방법과 동일하게 진행되지만 후 분석 방법에는 차이가 있다.  
-Raw sequence data를 분석에 이용하기 위해서는 low quality base의 제거와 adaptor를 제거하는 과정이 필요하다.
-이 과정을 거친 sequence data는 sequence quality가 향상되어mapping rate가 증가하게 된다. Kneaddata 프로그램을 활용하면 Illumina 플랫폼 기반 시퀀싱에 활용된 adaptor 서열과 host genome의 서열을 쉽게 제거할 수 있다.
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_5_1.png?raw=true" style="width:90%">
+  <figcaption><b>Preprocessing of sequencing reads</b></figcaption>  
+</figure>
+
+Ribosome-bound mRNA reads differ from the mRNA extracted using the metatranscriptome SOP in that they have shorter RNA fragment lengths, requiring a different analysis approach.
+While trimming and alignment (mapping) are conducted following the methods specified in the metatranscriptome SOP, there are differences in the subsequent analysis methods.
+To utilize raw sequence data for analysis, it's necessary to go through a process of removing low-quality bases and eliminating adaptors. This process results in enhanced sequence quality and an increased mapping rate.
+The Kneaddata program makes it easy to remove adaptor sequences used in Illumina platform-based sequencing and host genome sequences.
 
 ```bash
 #host RNA removal and trimming
 $ kneaddata --input sample_1.fastq.gz --input sample_2.fastq.gz --reference-db hg37dec_v0.1 --output ./1.Trim/sample --trimmomatic /where/to/Trimmomatic-0.36/ --trimmomatic-options="MINLEN:90" 
-#--trimmomatic option; trimmomatic 설치 위치 지정
+#--trimmomatic option; trimmomatic path
 ```
 
-FastQC 프로그램을 이용하여 preprocessing전 후 sequence read의 quality를 비교하여 trimming결과를 확인할 수 있다.
-FastQC는 종합적인 fastq파일의 정보와 per base sequence quality와 per sequence QC content, per sequence quality score, sequence length distribution 등 trimming 결과를 다양한 parameter로 나타내준다.
+You can use the FastQC program to compare the quality of sequence reads before and after preprocessing, allowing you to verify the trimming results. FastQC provides comprehensive information about the fastq files, including parameters such as per base sequence quality, per sequence QC content, per sequence quality score, sequence length distribution, and more, to assess the outcomes of trimming.
 
 ```bash
 #FastQC running(java script)
 $./fastqc
-#java에서 fastq파일 선택하여 확인가능
+#check fastq file with java
 ```
 
-![QC 결과 예시](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_5_2.png?raw=true)
-> FastQC로 raw sequence의 quality check 결과 예시 
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_5_2.png?raw=true" style="width:90%">
+  <figcaption><b>Example of quality check results of raw sequence with FastQC</b></figcaption>  
+</figure>

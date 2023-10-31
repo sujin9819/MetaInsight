@@ -1,6 +1,6 @@
 # Ribosome profiling
 
-plotVisualRibo.R  스크립트[6]를 활용하여 .bam 파일과 메타유전체 분석 결과 얻은 결과 fasta파일을 input 파일로 활용하여  결과를 얻을 수 있다. (Linux 환경 권장) 
+[plotVisualRibo.R](https://github.com/bhattlab/bhattlab_workflows/tree/master/metariboseq) 스크립트를 활용하여 .bam 파일과 메타유전체 분석 결과 얻은 결과 fasta파일을 input 파일로 활용하여  결과를 얻을 수 있다. (Linux 환경 권장) 
 
 ```R
 #install RiboseqR
