@@ -26,7 +26,7 @@
 본격적인 SOP 소개에 앞서 메타전사체 분석에 활용할 수 있는 여러가지 툴을 소개한다.
 본 SOP에 소개된 툴 이외에도 표 1에 나열된 툴 혹은 유사한 목적을 가진 툴을 각 단계에 선택적으로 적용 가능하다.
 
-
+**Table 1. List of available RNA-seq analysis tools**
 <table>
 <thead>
   <tr>

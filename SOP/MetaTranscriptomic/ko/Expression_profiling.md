@@ -41,5 +41,5 @@ EGGNOG-mapper결과로 도출된 COG정보를 활용하여, 전체 메타전사�
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_7_4.png?raw=true" style="width:70%">
   <figcaption><b> iPATH3 결과 예시</b></figcaption>  
-</figure>\
+</figure>
 

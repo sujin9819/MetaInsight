@@ -1,19 +1,21 @@
-# 메타전사체 분석 활용툴
-■ Sequencing reads trimming
-- FastQC, cutadapt, trimGalore
-■ 메타유전체 서열에 read 정렬
-- Bowtie2[4]
-■ 정렬된 정보를 다른형태의 파일로 변경 (file format: sam to cov)
-- SamTools, bedtools
-■ Functional annotation
-- eggNOG-mapper
-■ Visualization
--iPATH3, KEGG-mapper, IGV
-■ R package
--DESeq2, ggplot2, pheatmap
+# Metatranscriptomic analysis tools
+- Sequencing reads trimming  
+ - FastQC, cutadapt, trimGalore  
+- Alignment  
+ - [Bowtie2](https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml)  
+- Convert file (file format: sam to cov)  
+ - SamTools, bedtools  
+- Functional annotation  
+ - eggNOG-mapper  
+- Visualization  
+ -iPATH3, KEGG-mapper, IGV  
+- R package  
+ - DESeq2, ggplot2, pheatmap  
 
-![Metatranscriptomics overview](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_4_1.png?raw=true)
-> Metatranscriptomics 분석 파이프라인
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_4_1.png?raw=true" style="width:90%">
+  <figcaption><b>Metatranscriptomics analysis pipeline</b></figcaption>  
+</figure>
 
 # Installation
 Before proceeding with the analysis pipeline, let me first explain the program installation process.

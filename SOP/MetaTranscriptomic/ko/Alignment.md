@@ -6,7 +6,7 @@
 </figure>
 
 
-메타유전체 분석 결과로 얻어진 data를 분석하는 방법 중 메타유전체 분석 결과로 얻어진 de novo assembled contig 및 metagenome-assembled genome (MAG)의 서열에 RNA-seq read들을 mapping하는 방식을 기반으로 하는 “reference-guided analysis” 방법을 먼저 소개하고자 한다. 
+메타유전체 분석 결과로 얻어진 data를 분석하는 방법 중 메타유전체 분석 결과로 얻어진 *de novo* assembled contig 및 metagenome-assembled genome (MAG)의 서열에 RNA-seq read들을 mapping하는 방식을 기반으로 하는 “reference-guided analysis” 방법을 먼저 소개하고자 한다. 
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_6_2.png?raw=true" style="width:90%">
@@ -14,9 +14,9 @@
 </figure>
 
 Pre-processing을 진행하여 sequence quality가 개선된 fastq 파일을 reference 시퀀스*에 mapping하여 alignment를 수행한다. 이때 STAR 프로그램을 이용하여 reference파일을 제작하고 만든 reference서열에 reads를 mapping하게 된다.
-- *Reference 시퀀스의 종류
- 1. 메타유전체 de novo assembly 파이프라인 분석 결과로 얻어진 `final.contig.fa`
- 2. 메타유전체 MAG binning결과 로 얻어진 `MAG.fa`
+- __*Reference 시퀀스의 종류__
+ 1. 메타유전체 de novo assembly 파이프라인 분석 결과로 얻어진 final.contig.fa
+ 2. 메타유전체 MAG binning결과 로 얻어진 MAG.fa
 
 ```bash
 #building STAR index
@@ -24,9 +24,9 @@ $ STAR --runMode genomeGenerate --genomeSAindexNbases 10 --runThreadN 8 --genome
 #mapping
 $ STAR --genomeDir ./index/sample --runThreadN 8 --readFilesIn ./1.Trim/sample_kneaddata_paired_1.fastq ./1.Trim/sample_kneaddata_paired_2.fastq --outFileNamePrefix ./2.Align/sample_
 ```
-STAR의 runMode 명령을 사용하여 metagenome의 MAG.fa 파일을 STAR running을 위한 index 파일을 생성한다. 생성된 index 파일을 기준으로 reference 시퀀스에 reads를 Mapping하여 각 유전자의 count의 정보가 부여된 .sam 파일을 얻을 수 있다.
+STAR의 `runMode` 명령을 사용하여 metagenome의 MAG.fa 파일을 STAR running을 위한 index 파일을 생성한다. 생성된 index 파일을 기준으로 reference 시퀀스에 reads를 Mapping하여 각 유전자의 count의 정보가 부여된 .sam 파일을 얻을 수 있다.
 STAR align결과는 따로 출력이 되지 않고 final.out 파일로 저장되어진다. Reads align결과는 Log.final.out 파일을 이용하여 확인 가능하며 전체 unique reads, multi-mapping reads 및 unmapped reads에 대한 정보를 얻을 수 있다. STAR결과 생성된 .sam파일은 용량이 크므로 용량이 작은 binary format의 .bam파일로 변환한다.  
-Read mapping이후 mapping 정보를 alignment하기 위해, samtools내 view, sort를 기능을 활용하여 .sam 파일을 .bam 파일로 변환한다. 
+Read mapping이후 mapping 정보를 alignment하기 위해, samtools내 `view`, `sort`를 명렁어를 활용하여 .sam 파일을 .bam 파일로 변환한다. 
 
 ```bash
 #install samtools
@@ -40,10 +40,10 @@ $ samtools view -b -F 4 sample_Aligned.out.sam | samtools sort - > sample.bam
 $ samtools index sample.bam
 ```
 
-이러한 `.bam`파일은 IGV를 통해서 alignment 결과의 시각화를 진행할 수 있다.
+이러한 .bam파일은 IGV를 통해서 alignment 결과의 시각화를 진행할 수 있다.
 IGV 프로그램으로 alignment결과를 확인하려면 메타유전체 de novo assembly 또는 MAG결과로 얻어진 MAG.fa이 필요하다.
-추가적으로 `MAG.fa` 서열 내에 annotation 된 CDS (coding sequence) 정보도 함께 표시하고 싶다면 이를 annotation하여 얻어진 `.gff파일*`도 함께 import 할 수 있다.
-또한, samtools 적용 결과 얻어진 coverage value 정보를 포함한 `.bam`과 samtools index 결과 생성된 `.bam.bai`파일이 필요하다.
+추가적으로 MAG.fa 서열 내에 annotation 된 CDS (coding sequence) 정보도 함께 표시하고 싶다면 이를 annotation하여 얻어진 .gff파일*도 함께 import 할 수 있다.
+또한, samtools 적용 결과 얻어진 coverage value 정보를 포함한 .bam과 samtools index 결과 생성된 .bam.bai파일이 필요하다.
 해당 파일들이 모두 import 되면 reference 서열에 CDS 정보 및 메타전사체 분석 sequence reads가 mapping 된 위치와 각 위치에 mapping 된 메타전사체 read count정보도 시각화하여 보여준다.  
 *gff (General Feature Format) 파일; MAG.fa에 대한 gff 파일 생성은 메타유전체 SOP 참고
 
@@ -60,8 +60,8 @@ $ make install
 # run prodigal
 $ prodigal -i sample_MAG.fa -p meta -a sample_MAG.prodigal.faa -d sample_MAG.prodigal.fna -f gff -o sample_MAG.prodigal.gff 
 ```
-Bedtools을 활용해서 각 functional annotation이 완료된 각 CDS에 대한 coverage (count) 정보를 얻을 수 있다. Bedtools 적용 전, bedtools활용에 필요한 정보만으로 `.gff` 항목을 간소화 하는 것이 좋다.
-ParseGennomeAnnotaion.py python스크립트를 사용하여 functional annotation으로 얻어진gff 파일 정보 중, CDS 정보, CDS의 위치, locus tag 정보만으로 구성된 간략화된 gff 파일로 parsing한다.
+Bedtools을 활용해서 각 functional annotation이 완료된 각 CDS에 대한 coverage (count) 정보를 얻을 수 있다. Bedtools 적용 전, bedtools활용에 필요한 정보만으로 .gff 항목을 간소화 하는 것이 좋다.
+ParseGFFonlyCDS.R R스크립트를 사용하여 functional annotation으로 얻어진 gff 파일 정보 중, CDS 정보, CDS의 위치, locus tag 정보만으로 구성된 간략화된 gff 파일로 parsing한다.
 
 ```bash
 #make CDS only gff file with python-script

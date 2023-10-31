@@ -6,7 +6,7 @@
 </figure>
 
 Raw sequence data를 분석에 이용하기 위해서는 low quality base의 제거와 adaptor를 제거하는 과정이 필요하다.
-이 과정을 거친 sequence data는 sequence quality가 향상되어mapping rate가 증가하게 된다. Kneaddata 프로그램을 활용하면 Illumina 플랫폼 기반 시퀀싱에 활용된 adaptor 서열과 host genome의 서열을 쉽게 제거할 수 있다.
+이 과정을 거친 sequence data는 sequence quality가 향상되어 mapping rate가 증가하게 된다. Kneaddata 프로그램을 활용하면 Illumina 플랫폼 기반 시퀀싱에 활용된 adaptor 서열과 host genome의 서열을 쉽게 제거할 수 있다.
 
 ```bash
 #host RNA removal and trimming

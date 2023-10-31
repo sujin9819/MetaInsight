@@ -2,7 +2,7 @@
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_8_1.png?raw=true" style="width:90%">
-  
+  <figcaption><b></b></figcaption>  
 </figure>
 
 

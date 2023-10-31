@@ -1,7 +1,9 @@
 # Preprocessing of the sequencing reads
 
-![pipeline](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_5_1.png?raw=true)
-> Preprocessing of sequencing reads
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_5_1.png?raw=true" style="width:90%">
+  <figcaption><b>Preprocessing of sequencing reads</b></figcaption>  
+</figure>
 
 To utilize raw sequence data for analysis, it's necessary to go through a process of removing low-quality bases and eliminating adaptors. This process results in enhanced sequence quality and an increased mapping rate.
 The Kneaddata program makes it easy to remove adaptor sequences used in Illumina platform-based sequencing and host genome sequences.
@@ -20,5 +22,7 @@ $./fastqc
 #check fastq file with java
 ```
 
-![QC 결과 예시](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_5_2.png?raw=true)
-> Example of quality check results of raw sequence with FastQC
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_5_2.png?raw=true" style="width:90%">
+  <figcaption><b>Example of quality check results of raw sequence with FastQC</b></figcaption>  
+</figure>

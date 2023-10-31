@@ -1,8 +1,9 @@
 # Reads-based profiling
 
-Apart from eggNOG-mapper, you can also obtain information about metabolic pathways using HUMAnN [32].
+Apart from eggNOG-mapper, you can also obtain information about metabolic pathways using [HUMAnN](https://huttenhower.sph.harvard.edu/humann/).
 
-HUMAnN (HMP Unified Metabolic Analysis Network) is a software designed to profile microbial metabolism and molecular functions from metagenomic or metatranscriptomic sequence data. It accepts various types of input files, including `.fastq` files from metagenomes or metatranscriptomes after host data removal and quality trimming, alignment result files (`.sam` or `.bam`), and gene information with count data in `.tsv` and `.biom` formats.
+HUMAnN (HMP Unified Metabolic Analysis Network) is a software designed to profile microbial metabolism and molecular functions from metagenomic or metatranscriptomic sequence data.
+It accepts various types of input files, including .fastq files from metagenomes or metatranscriptomes after host data removal and quality trimming, alignment result files (.sam or .bam), and gene information with count data in .tsv and .biom formats.
 You can perform microbial community analysis and functional analysis within the community using pangenome databases such as MetaPhlAn and ChocoPhlAn. Additionally, you can acquire genome information and pathway details using UniRef, MetaCyc, and MinPath.
 
 ```bash
@@ -25,8 +26,10 @@ $ humann_barplot –-input sample_pathcoverage.tsv –-focal-feature $PATHWAY_NA
 - The explanation related to HUMAnN installation and DB download is described once more.
 
 When conducting HUMAnN analysis, you can obtain information about gene families and pathways.
-Among them, you can use pathway information stored in the `sample_pathabundance.tsv` and `sample_pathcoverage.tsv` files to create bar plots, allowing you to visualize the proportion of microorganisms involved in specific pathways.
+Among them, you can use pathway information stored in the sample_pathabundance.tsv and sample_pathcoverage.tsv files to create bar plots, allowing you to visualize the proportion of microorganisms involved in specific pathways.
 HUMAnN generates several files (e.g., bowtie results, diamond results), and you can use these for additional analyses.
 
-![Example of a barplot visualization result of path information derived from HUMAnN results](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_11_1.png?raw=true)
-> Example of a barplot visualization result of path information derived from HUMAnN results
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_11_2.png?raw=true" style="width:90%">
+  <figcaption><b>Example of a barplot visualization result of path information derived from HUMAnN results</b></figcaption>  
+</figure>
