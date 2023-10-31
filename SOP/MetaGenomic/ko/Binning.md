@@ -39,7 +39,7 @@ $ samtools view -bS -o N_008_HiFi.p_ctg_mapped.bam N_008_HiFi.p_ctg_mapped.sam -
 $ samtools sort N_008_HiFi.p_ctg_mapped.bam -o 
 ```
 
-Coverage 정보인 bam파일이 준비되면 MetaBAT2에서 제공하는 `jgi_summarize_bam_contig_depth` 스크립트를 사용하여 최종 `depth.txt` 파일을 생성한 뒤 assemble한 contig와 함께 binning을 수행한다. 
+Coverage 정보인 bam파일이 준비되면 MetaBAT2에서 제공하는 `jgi_summarize_bam_contig_depth` 스크립트를 사용하여 최종 depth.txt 파일을 생성한 뒤 assemble한 contig와 함께 binning을 수행한다. 
 ```bash
 $ conda activate MetaBAT2
 # generate depth file from bam file

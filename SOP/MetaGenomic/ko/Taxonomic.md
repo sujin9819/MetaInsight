@@ -24,7 +24,7 @@ Metagenome dataset의 taxonomic profiling방식은 크게 3가지로 나뉠 수 
 $ conda activate kaiju
 $ kaiju-makedb -s nr
 ```
-Makedb 커맨드 후 생성되는 파일 : `Kaiju_db_nr.fmi`, `nodes.dmp`, `names.dmp`
+Makedb 커맨드 후 생성되는 파일 : Kaiju_db_nr.fmi, nodes.dmp, names.dmp
 
 
 ```bash

@@ -8,9 +8,9 @@
 ## Short reads
 
 For quality control of raw sequence data, two crucial steps are (1) removing low-quality bases and (2) eliminating artifacts such as barcodes, adaptors, and chimeras.
-[KneadData](https://bitbucket.org/biobakery/kneaddata) employs [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic) for quality filtering and trimming and Tandem Repeat Finder (TRF) for read preprocessing.
+[KneadData](https://huttenhower.sph.harvard.edu/kneaddata) employs [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic) for quality filtering and trimming and Tandem Repeat Finder (TRF) for read preprocessing.
 Additionally, it utilizes [Bowtie2](https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml) for FastQC analysis and read alignment.
-When using Trimmomatic, you can specify the minimum length of the sequence as a percentage of the input read with the --trimmomatic-options='MINLEN:' parameter.
+When using Trimmomatic, you can specify the minimum length of the sequence as a percentage of the input read with the `--trimmomatic-options='MINLEN:'` parameter.
 ```bash
 # Downlodad host genome (ex.Human)
 $ conda activate kneaddata

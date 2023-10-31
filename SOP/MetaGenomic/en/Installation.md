@@ -1,4 +1,4 @@
-## 메타유전체 분석 활용툴 
+# Metagenomic analysis tools
 - Preprocessing of the sequencing reads : Kneaddata, minimap2, samtools
 - Read-based profiling : HUMAnN 3.0, MetaPhlAn
 - De novo assembly : MEGAHIT, Quast, hifiasm_meta, Bandage
@@ -9,7 +9,7 @@
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_4_1.png?raw=true" style="width:90%">
-  <figcaption><b>메타유전체 분석 파이프라인</b></figcaption>  
+  <figcaption><b>Metagenomics analysis pipeline</b></figcaption>  
 </figure>
 
 # Installation

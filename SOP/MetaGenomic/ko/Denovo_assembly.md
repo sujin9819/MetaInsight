@@ -35,7 +35,7 @@ $ awk '/^S/{print ">"$2;print $3}' test.p_ctg.gfa > test.p_ctg.fa
 
 “.gfa”는 graphical fragment assembly의 약자로, 그래프 기반 어셈블리 정보를 저장하는 파일 형식으로 어셈블리 과정에서 생성된 그래프의 정보를 담고 있다. 그래프 파일은 De Bruijin 그래프와 유사한 구조로, 노드와 엣지들의 연결관계를 표현한다. 이 그래프는 겹치는 DNA 서열들의 상호작용을 표현하여 어셈블리를 도와주는 역할을 한다.
 
-[Hifiasm-meta][7] 수행시 다음과 같은 결과 파일들이 나온다.
+[Hifiasm-meta](https://github.com/lh3/hifiasm-meta) 수행시 다음과 같은 결과 파일들이 나온다.
 1. Raw unitig graph : asm.r_utg*.gfa
 이 파일은 어셈블리 과정에서 생성된 raw unitig 그래프를 담고 있다. Raw unitig 그래프는 어셈블리를 위한 초기 그래프로, 겹치는 서열 정보를 바탕으로 노드와 엣지를 구성한다.
 

@@ -8,8 +8,8 @@
 ## Short reads
 
 Raw sequence data의 quality control 작업을 위해서는 (1) low quality bases 제거, (2) Artifact 제거 (barcodes, adaptors, chimeras)가 이루어져야 한다.
-[KneadData](https://bitbucket.org/biobakery/kneaddata) 는 [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic) (quality filtering/trimming)과 Tandem Repeat Finder (TRF), 그리고 FastQC 와 read align을 위한 [Bowtie2](https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml)를 사용하여 read preprocessing을 진행한다.
-Trimmomatic 진행 시 --trimmomatic-options="MINLEN:"을 통해 서열길이의 최소길이를 input read의 percentage로 지정할 수 있다.x
+[KneadData](https://huttenhower.sph.harvard.edu/kneaddata) 는 [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic) (quality filtering/trimming)과 Tandem Repeat Finder (TRF), 그리고 FastQC 와 read align을 위한 [Bowtie2](https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml)를 사용하여 read preprocessing을 진행한다.
+Trimmomatic 진행 시 `--trimmomatic-options="MINLEN:"`을 통해 서열길이의 최소길이를 input read의 percentage로 지정할 수 있다.
 
 ```bash
 # Downlodad host genome (ex.Human)

@@ -4,7 +4,7 @@ The methods for analyzing preprocessed reads can be categorized into two main ap
 Read-based profiling involves taxonomic and functional profiling without the need for assembly, primarily relying on k-mer matching.
 This approach is particularly useful for analyzing low-depth samples that are challenging to assemble. It offers the advantage of faster analysis completion.
 
-[HUMAnN 3.0](https://huttenhower.sph.harvard.edu/humann/)은 for instance, utilizes the MetaPhlAn program for pre-taxonomic profiling.
+[HUMAnN 3.0](https://huttenhower.sph.harvard.edu/humann/), for instance, utilizes the MetaPhlAn program for pre-taxonomic profiling.
 It then employs a translated search to examine unmapped reads, facilitating further analysis and quantification of gene families and pathways across the entire pangenomes.
 
 ```bash
