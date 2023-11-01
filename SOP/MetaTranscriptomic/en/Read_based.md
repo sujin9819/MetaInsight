@@ -30,6 +30,6 @@ Among them, you can use pathway information stored in the sample_pathabundance.t
 HUMAnN generates several files (e.g., bowtie results, diamond results), and you can use these for additional analyses.
 
 <figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_11_2.png?raw=true" style="width:90%">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_11_1.png?raw=true" style="width:90%">
   <figcaption><b>Example of a barplot visualization result of path information derived from HUMAnN results</b></figcaption>  
 </figure>
