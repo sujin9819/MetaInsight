@@ -30,6 +30,6 @@ HUMAnN 분석을 진행하게 되면 gene family정보와 pathway정보를 얻�
 HUMAnN분석으로 얻어진 여러 파일(bowtie결과, diamond결과 등)을 이용하여 추가적인 분석 역시 가능하다.
 
 <figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_11_2.png?raw=true" style="width:90%">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_11_1.png?raw=true" style="width:90%">
   <figcaption><b>HUMAnN 결과로 도출된pathway 정보의 barplot 시각화 결과 예시</b></figcaption>  
 </figure>
