@@ -1,5 +1,5 @@
 
-# I. Preparation for sequencing
+# Preparation for sequencing
 ## Biological samples
 Collect the fecal sample using the sampling spoon and spatula of the fecal collection kit (NBG-4, Noble Biosciences), shake well to homogenize the sample, and store at -80℃.
 
@@ -31,7 +31,7 @@ Collect the fecal sample using the sampling spoon and spatula of the fecal colle
 - Quantify using a NanoDrop and store the eluted DNA frozen at -20°C.
 
 
-## [2.2] DNA preparation for long reads seqencing
+## DNA preparation for long reads seqencing
 ### Reagents
 **QIAamp PowerFecal DNA kit (Qiagen)**  
 We employed the QIAamp PowerFecal DNA kit (Qiagen), as recommended by PacBio. This choice was made because long-read sequencing demands a substantial amount of DNA, and it is crucial to minimize DNA fragmentation.

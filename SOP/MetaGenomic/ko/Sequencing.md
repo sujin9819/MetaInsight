@@ -1,10 +1,10 @@
 
-# I. Preparation for sequencing
-## [1] Biological samples
+# Preparation for sequencing
+## Biological samples
 - 분변 채취용 키트 (NBG-4, Noble Biosciences)의 검채용 스푼과 스패츌러를 이용하여 fecal sample을 채취한 뒤 잘 흔들어 주어 검체를 균일하게 해준 뒤 -80℃에 보관한다. 
 
 
-## [2.1] DNA preparation for short reads sequencing
+## DNA preparation for short reads sequencing
 ### Reagents  
 **FastDNA SPIN Kit for Feces (MP Biomedicals)**  
 - Sodium Phosphate Buffer (MP Biomedicals), MT Buffer (MP Biomedicals), PLS Solution (MP Biomedicals), PPS Solution (MP Biomedicals), Wash Buffer #1(MP Biomedicals), Wash Buffer #2 (MP Biomedicals), TES (MP Biomedicals), 100% ethanol
@@ -31,7 +31,7 @@
 - 2분동안 14,000ⅹg로 원심분리 하여 pellet에서 DNA를 elution한다. 
 - Nano drop을 이용하여 정량한 뒤 -20℃에 얼려서 보관한다.
 
-## [2.2] DNA preparation for long reads seqencing
+## DNA preparation for long reads seqencing
 ### Reagents
 **QIAamp PowerFecal DNA kit (Qiagen)**  
 (Long read 시퀀싱을 위해서 DNA 양이 많이 필요하며, DNA fragmentation을 최소화해야하기 때문에, PacBio사에서 추천하는 **QIAamp PowerFecal DNA kit** (Qiagen)를 사용하였다.)

@@ -36,13 +36,13 @@ $ awk '/^S/{print ">"$2;print $3}' test.p_ctg.gfa > test.p_ctg.fa
 “.gfa”는 graphical fragment assembly의 약자로, 그래프 기반 어셈블리 정보를 저장하는 파일 형식으로 어셈블리 과정에서 생성된 그래프의 정보를 담고 있다. 그래프 파일은 De Bruijin 그래프와 유사한 구조로, 노드와 엣지들의 연결관계를 표현한다. 이 그래프는 겹치는 DNA 서열들의 상호작용을 표현하여 어셈블리를 도와주는 역할을 한다.
 
 [Hifiasm-meta](https://github.com/lh3/hifiasm-meta) 수행시 다음과 같은 결과 파일들이 나온다.
-1. Raw unitig graph : asm.r_utg*.gfa
+1. Raw unitig graph : asm.r_utg*.gfa  
 이 파일은 어셈블리 과정에서 생성된 raw unitig 그래프를 담고 있다. Raw unitig 그래프는 어셈블리를 위한 초기 그래프로, 겹치는 서열 정보를 바탕으로 노드와 엣지를 구성한다.
 
-2. Cleaned unitig graph: asm.p_utg*.gfa
+2. Cleaned unitig graph: asm.p_utg*.gfa  
 이 파일은 전처리된 cleaned unitig 그래프를 담고 있다. 전처리는 raw unitig 그래프에서 에러를 제거하고 정확성을 향상시키는 과정을 의미한다. 
 
-3. Contig graph: asm.p_ctg*.gfa, asm.a_ctg*.gfa
+3. Contig graph: asm.p_ctg*.gfa, asm.a_ctg*.gfa  
 이 파일은 contig 그래프를 담고 있다. asm.p_ctg*.gfa 파일은 primary contig를, asm.a_ctg*.gfa는 alternate contig를 의미한다.
 
 __* Unitig란. __  
@@ -50,9 +50,9 @@ Unitig는 unique sequence 의 줄임말로 어셈블리 중간 단계의 결과�
 
 ## Contig check
 long read assembly 결과는 bandage plot으로 시각화 할 수 있다. Bandage plot은 어셈블리 결과를 시각화하는 도구 중 하나이다. 이 도구는 De Bruijin 그래프나 오버렙 그래프 등과 같이 복잡한 어셈블리 결과를 직관적이고 이해하기 쉬운 상태로 표현한다. Long read 데이터를 이용한 어셈블리에서는 단순히 선형으로 서열을 조합하는 것보다 더 복잡한 그래프 형태가 나타날수 있는데 이 그래프를 시각화하는 데에 bandage plot이 사용된다.
-다음과 같은 정보를 제공한다.
-▪ 노드와 엣지 표시 : 노드는 어셈블리 결과에서 생성된 서열조각을 나타내며, 엣지는 서열들 간의 연결을 나타낸다. 
-▪ 분기점 확인 : 그래프 내에서 분기점이나 연결부위를 시각화하여, 서로 다른 서열 간의 관계와 겹치는 부분을 파악할 수 있다. 
+다음과 같은 정보를 제공한다.  
+▪ 노드와 엣지 표시 : 노드는 어셈블리 결과에서 생성된 서열조각을 나타내며, 엣지는 서열들 간의 연결을 나타낸다.  
+▪ 분기점 확인 : 그래프 내에서 분기점이나 연결부위를 시각화하여, 서로 다른 서열 간의 관계와 겹치는 부분을 파악할 수 있다.  
 ▪ bandage plot은 Bandage(a Bioinformatics Application for Navigating De novo Assembly Graphs Easily) 프로그램을 통해 나타낼수 있다. Bandage는 http://rrwick.github.io/Bandage/ 에서 다운 받을 수 있다. 리눅스 환경에 설치할 경우 dependency 들이 존재하므로, Window나 Mac 환경에 설치하는 것이 더 쉽다. 
 
 Bandage 프로그램을 실행시킨 후 상단의 File > Load graph에서 *p_ctg.gfa 파일을 load해주면 된다. 파일이 loading 되면 Graph drawing에서 Draw graph 를 클릭해주어야 그래프가 나타난다. 
@@ -62,7 +62,7 @@ Bandage 프로그램을 실행시킨 후 상단의 File > Load graph에서 *p_ct
   <figcaption><b></b></figcaption>  
 </figure>
 
-Assembly가 끝나면 생산된 contig들의 정보를 알기 위해 [QUAST(Quality assessment tool)][8]을 사용하여 assemble 결과 및quality를 확인한다.
+Assembly가 끝나면 생산된 contig들의 정보를 알기 위해 [QUAST](https://github.com/ablab/quast)(Quality assessment tool)을 사용하여 assemble 결과 및quality를 확인한다.
 ```bash
 # calculate assembly statistics
 $ conda activate quast
@@ -77,15 +77,15 @@ $ conda deactivate
 </figure>
 
 * contigs : assembly 후 생산된 contig의 개수
-Largest contig : assembly 후 생성된 contig들 중 가장 긴 contig의 길이
-Total length : assembly 후 생성된 contig들의 총 base 수
-N50 : assembly 후 생성된 contig들 중 상위 50% 길이를 가지는 contig의 길이
-N75 : assembly 후 생성된 contig들 중 상위 75% 길이를 가지는 contig의 길이
-L50 : assembly 후 생성된 contig 들 중 N50의 길이를 가지는 contig들의 개수
-L75 : assembly 후 생성된 contig 들 중 N75의 길이를 가지는 contig 들의 개수
-Mismatches # N’s : assembly가 되지 않은 uncalled bases 개수
-Mismatches # N’s per 100kbp : 100000 base 당 uncalled 된 bases의 개수
-Contig 인덱스 증가에 따른 누적 길이를 나타내는 그래프와 contigs의 GC contents를 나타내는 그래프 
+- Largest contig : assembly 후 생성된 contig들 중 가장 긴 contig의 길이  
+- Total length : assembly 후 생성된 contig들의 총 base 수  
+- N50 : assembly 후 생성된 contig들 중 상위 50% 길이를 가지는 contig의 길이  
+- N75 : assembly 후 생성된 contig들 중 상위 75% 길이를 가지는 contig의 길이  
+- L50 : assembly 후 생성된 contig 들 중 N50의 길이를 가지는 contig들의 개수  
+- L75 : assembly 후 생성된 contig 들 중 N75의 길이를 가지는 contig 들의 개수  
+- Mismatches # N’s : assembly가 되지 않은 uncalled bases 개수  
+- Mismatches # N’s per 100kbp : 100000 base 당 uncalled 된 bases의 개수  
+- Contig 인덱스 증가에 따른 누적 길이를 나타내는 그래프와 contigs의 GC contents를 나타내는 그래프   
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaGenomic/img/G_7_4.png?raw=true" style="width:90%">
   <figcaption><b>Metagenomics overview</b></figcaption>  

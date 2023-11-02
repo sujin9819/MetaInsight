@@ -48,15 +48,15 @@ These graphs depict the interactions among overlapping DNA sequences, aiding in 
 When running [Hifiasm-meta](https://github.com/lh3/hifiasm-meta), the output files are as follows.
 
 
-__1. Raw unitig graph: asm.r_utg*.gfa__
+__1. Raw unitig graph: asm.r_utg*.gfa__  
 This file contains the raw unitig graph generated during the assembly process. The raw unitig graph is the initial graph for assembly, which organizes nodes and edges based on overlapping sequence information.
-__2. Cleaned unitig graph: asm.p_utg*.gfa__
+__2. Cleaned unitig graph: asm.p_utg*.gfa__  
 This file contains preprocessed cleaned unitig graphs. Preprocessing refers to the process of removing errors from the raw unitig graph and improving its accuracy.
-__3. Contig graph: asm.p_ctg*.gfa, asm.a_ctg*.gfa__
+__3. Contig graph: asm.p_ctg*.gfa, asm.a_ctg*.gfa__  
 This file contains the contig graph. The file asm.p_ctg*.gfa means primary contig and asm.a_ctg*.gfa means alternate contig.
 
 
-* Unitig
+* Unitig  
 A unitig, which stands for unique sequence, is a unit of overlapping DNA sequences that is the result of an intermediate step in assembly. Each unitig consists of one or more DNA sequences and contains overlapping parts. The assembly process generates a raw unitig graph. This raw unitig graph may contain some errors. The subsequent processing removes the errors from the raw unitig graph and generates a cleaned unitig graph.
 
 ## Contig check
@@ -77,7 +77,7 @@ After running the Bandage program, load the *p_ctg.gfa file from File > Load gra
   <figcaption><b></b></figcaption>  
 </figure>
 
-After assembly, check the assembly result and quality using [QUAST(Quality assessment tool)](https://github.com/ablab/quast) to know the information of the produced contigs.
+After assembly, check the assembly result and quality using [QUAST](https://github.com/ablab/quast)(Quality assessment tool) to know the information of the produced contigs.
 
 ```bash
 # calculate assembly statistics
