@@ -41,6 +41,6 @@ plotCDSfilt.pdf파일들은 ribosome이 결합하는 크기(footprint size)인 2
 
 
 <figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_7_3.png?raw=true" style="width:90%">
-  <figcaption><b>Predicted translation efficiency</b></figcaption>  
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_7_3.jpg?raw=true" style="width:90%">
+  <figcaption><b>Predicted translation efficiency ; <a href="https://doi.org/10.1038/nrm4069">[ref]</a></b></figcaption>  
 </figure>

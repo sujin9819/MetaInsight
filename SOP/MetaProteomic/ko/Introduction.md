@@ -16,15 +16,15 @@
 
 Ribo-seq은 시퀀싱 기술을 응용하여 단백체를 분석하는 기술로서, 클로람페니콜을 처리하여 세포 상태를 고정시키고 MNase를 통해 ribosome으로 보호되지 않은 DNA와 RNA를 제거한 후 단백질 생합성 중인 mRNA 서열을 시퀀싱하는 방법이다.
 이는 기존의 질량분석기 기반 기술의 낮은 throughput, yield, 제한된 정확도의 데이터베이스가 가지고 있는 문제점을 해결하고자 시도되었다.
-Ribo-seq 기술은 2009년 Science지에 처음 보고 되었으며 ribosome 프로파일링을 통하여 yeast에서 영양이 풍부한 상태와 고갈된 상태에서 단백질 합성이 달라지는 양상을 확인한 바 있다[2].
+Ribo-seq 기술은 2009년 Science지에 처음 보고 되었으며 ribosome 프로파일링을 통하여 yeast에서 영양이 풍부한 상태와 고갈된 상태에서 단백질 합성이 달라지는 양상을 확인한 바 있다 [&#91;ref&#93;](https://doi.org/10.1038/s41467-020-17081-z).
 Ribo-seq은 이용한 단백체 분석은 합성되고 있는 단백질을 암호화하고 있는 유전자 정보를 확인하여 단백질 합성을 정량화 할 수 있으며, 메타 단백체 분석에서도 분변 샘플에 대해 RNALater에 얼려서 보관되고 있는 분변에 대해 ribo-Seq을 통하여 충분히 신뢰할만한 메타 단백체 분석 결과를 얻을 수 있음이 보고 되었다[3].
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_0_2.jpg?raw=true" style="width:90%">
-  <figcaption><b>MetaRibo-seq을 포함한 마이크로바이옴 분석 workflow</b></figcaption>  
+  <figcaption><b>MetaRibo-seq을 포함한 마이크로바이옴 분석 workflow ; <a href="https://doi.org/10.1038/s41467-020-17081-z">[ref]</a></b></figcaption>  
 </figure>
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_0_3.jpg?raw=true" style="width:90%">
-  <figcaption><b>Ribosome profiling workflow</b></figcaption>  
+  <figcaption><b>Ribosome profiling workflow ; <a href="https://doi.org/10.1073/pnas.1614788113">[ref]</a></b></figcaption>  
 </figure>

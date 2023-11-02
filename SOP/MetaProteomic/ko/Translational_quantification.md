@@ -10,7 +10,7 @@ Ribo-seq read alignment결과 count 정보를 이용하여 각 유전자의 발�
 더 나아가 각 유전자뿐만 아니라 메타유전체 결과 얻어진 de novo assembly로 생성된 개별 contig 또는 개별 MAG의 발현 정보를 얻는 것도 가능하다.
 그리고, 좀 더 체계적인 분석을 위하여 경우에 따라서는 비슷한 기능을 가진 유전자들을 카테고리 별로 분류하거나 혹은 특정 대사경로(metabolic pathway)에 관여하는 유전자들을 묶어서 그들의 발현량을 분석해야 할 필요성이 존재한다.
 이를 위해서는 functional database에 대한 각 CDS들의 annotation정보가 필요한데, [eggNOG-mapper](https://github.com/eggnogdb/eggnog-mapper)를 활용하면 이러한 정보를 수월하게 얻을 수 있다.
-eggNOG-mapper는 input 파일로 각 유전자의 아미노산 서열이 나열되어진 `.faa` 파일이 요구되며, default option으로 running 하였을 때 각 유전자의 아미노산 서열을 blast하여 가장 유사한 [COG(Clusters of Orthologous Groups)](https://www.ncbi.nlm.nih.gov/research/cog-project/), [KEGG(Kyoto Encyclopedia of Genes and Genomes)](https://www.genome.jp/kegg/), [CAZy(Carbohydrate-Active EnZymes)](http://www.cazy.org/), [Pfam](http://pfam.xfam.org/)정보를 도출한다.
+eggNOG-mapper는 input 파일로 각 유전자의 아미노산 서열이 나열되어진 .faa 파일이 요구되며, default option으로 running 하였을 때 각 유전자의 아미노산 서열을 blast하여 가장 유사한 [COG](https://www.ncbi.nlm.nih.gov/research/cog-project/)(Clusters of Orthologous Groups), [KEGG](https://www.genome.jp/kegg/)(Kyoto Encyclopedia of Genes and Genomes), [CAZy](http://www.cazy.org/)(Carbohydrate-Active EnZymes), [Pfam](http://pfam.xfam.org/)정보를 도출한다.
 
 ```bash
 # download eggnog-mapper from https://github.com/eggnogdb/eggnog-mapper/releases/latest
@@ -27,7 +27,7 @@ $ emapper.py (option) -i sample_MAG.prodigal.faa -o sample_MAG.eggnog.out
   <figcaption><b>EGGNOG-mapper 결과 중 annotation 파일 예시</b></figcaption>  
 </figure>
 
-EGGNOG-mapper결과로 도출된COG정보를 활용하여, 전체 메타전사체에서 각 COG functional category의 발현 정도를 예측 가능하다. 
+EGGNOG-mapper결과로 도출된 COG정보를 활용하여, 전체 메타전사체에서 각 COG functional category의 발현 정도를 예측 가능하다. 
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_8_3.png?raw=true" style="width:90%">

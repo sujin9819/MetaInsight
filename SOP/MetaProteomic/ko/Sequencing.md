@@ -4,8 +4,8 @@
 
 ## Ribosome-bound mRNA prep
 ### Reagents
--RLT buffer (Qiagen), β-mercaptoethanol, Superase-In 20U/μL, 100% ethanol, 3M sodium acetate, chloramphenicol 50mg/ml, 1M Tris-HCl (pH8.0), 1M NH4Cl, 1M MgOAc, RNase-free water, Ipecal CA-630, 1M MgCl2, 0.5M EGTA, 5M NaCl, MNase (NEB), 0.5M CaCl2, Qiazol (Qiagen), chloroform
--kit 
+- RLT buffer (Qiagen), β-mercaptoethanol, Superase-In 20U/μL, 100% ethanol, 3M sodium acetate, chloramphenicol 50mg/ml, 1M Tris-HCl (pH8.0), 1M NH4Cl, 1M MgOAc, RNase-free water, Ipecal CA-630, 1M MgCl2, 0.5M EGTA, 5M NaCl, MNase (NEB), 0.5M CaCl2, Qiazol (Qiagen), chloroform
+- kit 
 miRNeasy mini kit (Qiagen), TURBO DNA-free™ Kit (Ambion)  
 
 ### Equipment

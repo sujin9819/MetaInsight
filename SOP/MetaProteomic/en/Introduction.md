@@ -2,29 +2,34 @@
 
 ## Introduction to Metaproteome
 
-전사체 및 단백체 분석으로 실제 미생물이 생태계에 미치는 생물학적인 요소에 대한 더 정확한 정보를 얻을 수 있으며, 마이크로바이옴 연구에서도 메타전사체와 메타단백체 정보 역시 군집을 이루는 미생물군의 정확한 기능 분석에 도움을 준다.
-메타전사체 정보가 환경 내 유전자의 발현과 활성에 대한 정보를 제공해준다면, 메타단백체 정보는 단백질의 발현 및 조절 정보를 포함하므로 메타전사체 정보와는 다르게 나타난다.
-질량분석기를 이용한 메타단백체 분석의 경우 미생물 군집에서 단백체를 추출한 후, liquid chromatograph(LC)를 이용하여 단백질을 분리하고 tandem mass spectrometry를 이용하여 각 단백질들이 무엇인지 검출하는 과정을 거친다.
-보다 개선된 단백질 특정화를 위해서 고성능의 mass spectrometry를 활용 및 정교한 단백질 분리를 위한 chromatography 방법 개발 등이 시도되고 있지만, 기존의 질량분석기를 이용한 메타단백체 분석의 경우 마이크로바이옴 샘플에서 일부분만이 프로파일링이 가능하며 특히 저분자 단백질은 고분자 단백질에 비해 확인될 가능성이 낮은 한계점을 가지며, 분석 빈도 또한 메타전사체 분석 건수와 비교하면 매우 낮은 편이다. 
+
+Transcriptomics and proteomics analyses provide more accurate information about the biological factors of microorganisms within an ecosystem. In microbiome research, both metatranscriptomics and metaproteomics help in the precise functional analysis of microbial communities that form clusters.
+While metatranscriptomic data offer insights into the expression and activity of genes in the environment, metaproteomic information includes protein expression and regulation data. As a result, metaproteomic data can differ from metatranscriptomic data.
+In metaproteomics, mass spectrometry is used to analyze the proteins within microbial communities. This involves the extraction of proteins from a microbial community, separation of proteins using liquid chromatography (LC), and detection of proteins using tandem mass spectrometry to identify each protein.
+Efforts have been made to improve protein specificity by using high-performance mass spectrometry and developing sophisticated chromatography methods for protein separation. However, it's important to note that traditional mass spectrometry-based metaproteomic analysis has limitations. Only a fraction of the microbiome sample can be profiled, and low molecular weight proteins are less likely to be detected compared to high molecular weight proteins. Additionally, the frequency of analysis is much lower when compared to metatranscriptomic analysis.
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_0_1.png?raw=true" style="width:90%">
-  <figcaption><b>멀티오믹스 정보기반 마이크로바이옴 기능 분석</b></figcaption>  
+  <figcaption><b>Multi-omics information-based microbiome functional analysis</b></figcaption>  
 </figure>
 
 ## Ribo-sequencing
 
-Ribo-seq은 시퀀싱 기술을 응용하여 단백체를 분석하는 기술로서, 클로람페니콜을 처리하여 세포 상태를 고정시키고 MNase를 통해 ribosome으로 보호되지 않은 DNA와 RNA를 제거한 후 단백질 생합성 중인 mRNA 서열을 시퀀싱하는 방법이다.
-이는 기존의 질량분석기 기반 기술의 낮은 throughput, yield, 제한된 정확도의 데이터베이스가 가지고 있는 문제점을 해결하고자 시도되었다.
-Ribo-seq 기술은 2009년 Science지에 처음 보고 되었으며 ribosome 프로파일링을 통하여 yeast에서 영양이 풍부한 상태와 고갈된 상태에서 단백질 합성이 달라지는 양상을 확인한 바 있다[2].
-Ribo-seq은 이용한 단백체 분석은 합성되고 있는 단백질을 암호화하고 있는 유전자 정보를 확인하여 단백질 합성을 정량화 할 수 있으며, 메타 단백체 분석에서도 분변 샘플에 대해 RNALater에 얼려서 보관되고 있는 분변에 대해 ribo-Seq을 통하여 충분히 신뢰할만한 메타 단백체 분석 결과를 얻을 수 있음이 보고 되었다[3].
+Ribo-seq is a protein analysis technique that applies sequencing technology to study the ribosome-protected mRNA sequences.
+In this method, cells are treated with chloramphenicol to fix their state, and MNase is used to remove DNA and RNA that are not protected by ribosomes.
+The sequencing is then performed on the mRNA sequences actively involved in protein synthesis.
+Ribo-seq was introduced in 2009 in a Science publication and has since been used to profile ribosomes [&#91;ref&#93;](https://doi.org/10.1038/s41467-020-17081-z).
+It has been employed to investigate how protein synthesis changes in yeast under different nutritional conditions, such as rich and depleted states.
+Ribo-seq allows the quantification of protein synthesis by encrypting the genes responsible for ongoing protein production.
+This technique provides insights into gene information encoding the proteins being synthesized, allowing for accurate quantification of protein synthesis.
+Furthermore, Ribo-seq has been reported to produce reliable metaproteomic analysis results when applied to fecal samples preserved in RNALater, making it a valuable tool for metaproteomic analysis in various settings.
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_0_2.jpg?raw=true" style="width:90%">
-  <figcaption><b>MetaRibo-seq을 포함한 마이크로바이옴 분석 workflow</b></figcaption>  
+  <figcaption><b>MetaRibo-seq을 포함한 마이크로바이옴 분석 workflow ; <a href="https://doi.org/10.1038/s41467-020-17081-z">[ref]</a></b></figcaption>  
 </figure>
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_0_3.jpg?raw=true" style="width:90%">
-  <figcaption><b>Ribosome profiling workflow</b></figcaption>  
+  <figcaption><b>Ribosome profiling workflow ; <a href="https://doi.org/10.1073/pnas.1614788113">[ref]</a></b></figcaption>  
 </figure>

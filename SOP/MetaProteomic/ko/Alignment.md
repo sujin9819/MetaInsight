@@ -69,7 +69,7 @@ $ wget https://raw.githubusercontent.com/sujin9819/ngs/main/R_scripts/ParseGFFon
 $ Rscript ParseGFFonlyCDS.R -i sample_MAG.prodigal.gff -o MAG.CDS.gff
 ```
 
-Bedtools 내 bamtobed 명령은 .bam 파일을 bed 파일로 변환 할 때, bedtools coverage명령은 bed파일로부터 gff파일 내 항목을 기반으로 count값을 도출 할 때 사용한다.
+Bedtools 내 `bamtobed` 명령은 .bam 파일을 bed 파일로 변환 할 때, bedtools coverage명령은 bed파일로부터 gff파일 내 항목을 기반으로 count값을 도출 할 때 사용한다.
 gff파일 내 항목 중 CDS의 위치 정보와 bed 파일의 sequence reads가 mapping되는 위치 정보를 매칭하여 각 CDS의 count값을 계산해준다.
 그 결과 CDS의 위치 정보 및 각 CDS에mapping되는 sequence read들의 count 정보, 그리고 유전자의 경우 strand 방향성에 대한 정보를 포함한 bed파일을 생성할 수 있다 (아래의 경우 sample.cov 로 표시함).
 
@@ -80,7 +80,7 @@ $ cd bedtools2
 #alignment
 $ bedtools bamtobed –i sample.bam > sample.bed
 $ bedtools coverage –a MAG.CDS.gff –b sample.bed –s > sample.cov
-
+```
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_4.png?raw=true" style="width:90%">

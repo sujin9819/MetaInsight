@@ -1,16 +1,16 @@
 # 메타단백체 분석 활용툴
 - Sequencing reads trimming  
- - FastQC, cutadapt, trimGalore  
+	- FastQC, cutadapt, trimGalore  
 - 메타유전체 서열에 read 정렬  
- - Bowtie2, STAR
+	- Bowtie2, STAR
 - 정렬된 정보를 다른형태의 파일로 변경 (file format: sam to cov)  
- - SamTools, bedtools  
+	- SamTools, bedtools  
 - Functional annotation  
- - eggNOG-mapper  
+	- eggNOG-mapper  
 - Visualization  
- -iPATH3, KEGG-mapper, IGV  
+	- iPATH3, KEGG-mapper, IGV  
 - R package 
- - RiboseqR, DESeq2, pheatmap, ggplot2   
+	- RiboseqR, DESeq2, pheatmap, ggplot2   
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_4_1.png?raw=true" style="width:90%">

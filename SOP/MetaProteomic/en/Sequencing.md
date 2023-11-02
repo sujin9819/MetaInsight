@@ -1,11 +1,11 @@
 # Sequencing
 ## Biological Samples
-1. Fecal sample 1 g당 500ul RNAlater (Ambion)를 처리하여 -80℃에 보관한다. 
+- Process 500 µL of RNAlater (Ambion) for every 1 g of fecal sample and store it at -80°C
 
 ## Ribosome-bound mRNA prep
 ### Reagents
--RLT buffer (Qiagen), β-mercaptoethanol, Superase-In 20U/μL, 100% ethanol, 3M sodium acetate, chloramphenicol 50mg/ml, 1M Tris-HCl (pH8.0), 1M NH4Cl, 1M MgOAc, RNase-free water, Ipecal CA-630, 1M MgCl2, 0.5M EGTA, 5M NaCl, MNase (NEB), 0.5M CaCl2, Qiazol (Qiagen), chloroform
--kit 
+- RLT buffer (Qiagen), β-mercaptoethanol, Superase-In 20U/μL, 100% ethanol, 3M sodium acetate, chloramphenicol 50mg/ml, 1M Tris-HCl (pH8.0), 1M NH4Cl, 1M MgOAc, RNase-free water, Ipecal CA-630, 1M MgCl2, 0.5M EGTA, 5M NaCl, MNase (NEB), 0.5M CaCl2, Qiazol (Qiagen), chloroform
+- kit 
 miRNeasy mini kit (Qiagen), TURBO DNA-free™ Kit (Ambion)  
 
 ### Equipment
@@ -42,20 +42,20 @@ Optional; Qubit fluorometer (Thermo Fisher Scientific), Fragment analyzer
 | Total | 10 ml |
 
 ### Ribosome-bound mRNA preparation
-1. 각 screw-top tube에 fecal sample과 bead를 넣고 반응액을 처리한다
+- Place a fecal sample and beads in each screw-top tube.
 | Each tube | volume |
 | ---| --- |
 | Fecal sample | 150mg |
 | 1.0mm zirconia/silica beads | ~20 |
 | Stock solution A | 600 μL |
-2. MP FastPrep 6.0m/s 40초 두번 진행한다.
-3. 12,000 rpm에서 3분간 원심분리 후, 상층액 500 μL를 새 e-tube 로 옮긴다.
-4. 3M sodium acetate 50 μL, 1mL 100% ethanol을 처리한다.
-5. Ice (또는 4℃)에서 30분 반응시킨다.
-6. 12,000 rpm 4℃에서 30분간 원심분리 후, 상층액을 제거한다.
-7. 100 μL Stock solution B로 재현탁한다.
-8. 1/50로 희석한 RNA를 Qubit으로 RNA 농도를 측정한다.
-9. MNase와 2시간 반응시킨다. 
+- Perform two rounds of MP FastPrep at 6.0 m/s for 40 seconds each.
+- Centrifuge at 12,000 rpm for 3 minutes, and transfer 500 μL of the supernatant to a new e-tube.
+- Add 50 μL of 3M sodium acetate and 1 mL of 100% ethanol to the supernatant.
+- Incubate on ice (or at 4°C) for 30 minutes.
+- Centrifuge at 12,000 rpm at 4°C for 30 minutes, and discard the supernatant.
+- Re-suspend in 100 μL of Stock solution B.
+- Dilute RNA 1/50 and measure RNA concentration with a Qubit.
+- Incubate with MNase for 2 hours. 
 | Total  | 200μL |
 | ---| --- |
 | Lysate | 80 μg |
@@ -63,57 +63,56 @@ Optional; Qubit fluorometer (Thermo Fisher Scientific), Fragment analyzer
 | Superase-In (20U/μL) | 2 μL |
 | NEB MNase (500U/μL) | 1 μL |
 | RNase free water | To 200 μL |
-10. 0.5M EGTA 2.5 μL 처리하여 반응을 중단시킨다
-11. Sephacryl S400 MicroSpin column을 준비하여 column 안의 resin을 재현탁한다. 
-12. Column을 600 rpm 에서 1 분간 원심분리 후 통과액을 제거한다.
-13. Column에 Stock solution C 500 μL를 넣고 600 rpm 4℃에서 1분간 원심분리 후 통과액을 제거한다. (두번 반복)
-14. Column에 Stock solution C 500 μL를 넣고 600 rpm 4℃에서 4분간 원심분리 후 통과액을 제거 후 새로운 e-tube에 column을 넣는다.
-15. 각 column에 100 μL의 10)의 MNase 반응액을 처리하고 600 rpm 2분간 원심분리 후 통과액을 얻는다.
-16. 통과액에 Qiazol 700 μL를 처리하고 vortexing후 상온에서 5분 반응시킨다.
-17. Chloroform 140 μL를 넣고 15초 흔들어준 후 상온에서 3분 반응시킨다.
-18. 12,000 rpm 4℃에서 15분간 원심분리 후 상층액을 새 e-tube에 옮겨준다.
-19. 상층액의 1.5배의 양(약 525 μL)의 100% ethanol을 넣고 pipetting으로 섞어준다.
-20. RNeasy mini column에 19)의 용액을 700 μL를 넣고 12,000 rpm에서 15초 원심분리 후 통과액을 버린다.
-21. 남은 19)의 용액으로 20)을 한 번 더 진행한다.
-22. RWT buffer 700 μL를 column에 처리하고 12,000 rpm에서 15초간 원심분리 후 통과액을 버린다.
-23. RPE buffer 500 μL를 column에 처리하고 12,000 rpm에서 15초간 원심분리 후 통과액을 버린다.
-24. RPE buffer 500 μL를 column에 처리하고 12,000 rpm에서 2분간 원심분리 후 column을 새 e-tube에 옮긴다.
-25. RNase-free water 30-50μL 를 column의 membrane에 처리하여 12,000 rpm에서 1분간 원심분리 후 ribosome-bound mRNA를 얻는다
+- Add 2.5 μL of 0.5M EGTA to stop the reaction.
+- Prepare a Sephacryl S400 MicroSpin column and re-suspend the resin inside the column.
+- Centrifuge the column at 600 rpm for 1 minute, discard the flow-through.
+- Add 500 μL of Stock solution C to the column, centrifuge at 600 rpm at 4°C for 1 minute, and discard the flow-through (repeat this step).
+- Add 500 μL of Stock solution C to the column, centrifuge at 600 rpm at 4°C for 4 minutes, and transfer the column to a new e-tube.
+- Add 100 μL of the MNase reaction mixture (from step 10) to each column, centrifuge at 600 rpm for 2 minutes, and collect the flow-through.
+- Add 700 μL of Qiazol to the collected flow-through, vortex, and incubate at room temperature for 5 minutes.
+- Add 140 μL of chloroform, shake for 15 seconds, and incubate at room temperature for 3 minutes.
+- Centrifuge at 12,000 rpm at 4°C for 15 minutes, and transfer the upper phase to a new e-tube.
+- Add approximately 525 μL (1.5 times the upper phase volume) of 100% ethanol to the upper phase and mix by pipetting. *
+- Load the solution from step * onto an RNeasy mini column and centrifuge at 12,000 rpm for 15 seconds to discard the flow-through.
+- Repeat previous step with the remaining solution from step *.
+- Add 700 μL of RWT buffer to the column, centrifuge at 12,000 rpm for 15 seconds to discard the flow-through.
+- Add 500 μL of RPE buffer to the column, centrifuge at 12,000 rpm for 15 seconds to discard the flow-through.
+- Add 500 μL of RPE buffer to the column, centrifuge at 12,000 rpm for 2 minutes to discard the flow-through. Then, transfer the column to a new e-tube.
+- Add 30-50 μL of RNase-free water to the column membrane, centrifuge at 12,000 rpm for 1 minute, and collect the ribosome-bound mRNA.
 
 **[Optional: QC]**  
-26. Qubit fluorometer*로 RNA 농도를 측정한다.  
-*NanoDrop spectrophotometer도 사용 가능 하지만 정확한 농도 측정을 위해 Qubit fluorometer를 추천함
-27. Fragment analyzer를 활용하여 얻어진 RNA의 QC를 진행한다.
-![Fragment analyzer 활용 ribosome-bound mRNA 분석 결과 예시 ](https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_2_1.png?raw=true)  
-> Fragment analyzer 활용 ribosome-bound mRNA 분석 결과 예시  
-※Fragment analyzer를 사용하여 RNA에서 mRNA뿐만 아니라 rRNA의 비율을 확인 가능하다. Transcriptome분석을 위한 mRNA와는 다르게 ribosome에 binding 된 짧은 길이가 mRNA와 작은 크기의 rRNA만 prep 된다.
+- Measure the RNA concentration using a Qubit fluorometer*.  
+*A NanoDrop spectrophotometer can also be used, but for accurate concentration measurement, it is recommended to use a Qubit fluorometer.
+- Perform QC of the obtained RNA using a Fragment analyzer.
+<figure align = "center">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_2_1.png?raw=true" style="width:90%">
+  <figcaption><b>Example of ribosome-bound mRNA sample analysis results using a Fragment analyzer</b></figcaption>  
+</figure>
+A Fragment Analyzer can be used to assess the proportion of rRNA in RNA samples, in addition to mRNA. Unlike mRNA prepared for transcriptome analysis, ribosome profiling selectively prepares short mRNA fragments that are associated with ribosomes and small-sized rRNA.
 
-28. 10X TURBO DNase buffer가 1X가 되도록 처리하고, TURBO DNase 1 μL와 RNA에 처리한다
-29. 37℃에 20-30분 반응시켜준다.
-30. 0.1배 volume의 DNase inactivation reagent를 처리한다.
-31. 상온에서 5분 반응시켜준다
-32. 10,000rpm에서 1분 30초 원심분리 후 상층액을 새 e-tube에 옮긴다.
+- Prepare the 10X TURBO DNase buffer to a 1X concentration and add 1 μL of TURBO DNase to the RNA.
+- Incubate at 37°C for 20-30 minutes.
+- Add 0.1 times the volume of DNase inactivation reagent.
+- Incubate at room temperature for 5 minutes.
+- Centrifuge at 10,000 rpm for 1 minute and 30 seconds, and transfer the supernatant to a new e-tube.
 
 ### rRNA depletion
--Host rRNA 제거 Illumina TruSeq Stranded Total RNA Library Prep Plant Kit (Illumina, # 20020611)
--Bacterial rRNA 제거 Illumina Stranded Total RNA Library Prep with Ribo-Zero Plus kit (Illumina, #20040529)
+- Host rRNA remove Illumina TruSeq Stranded Total RNA Library Prep Plant Kit (Illumina, # 20020611)
+- Bacterial rRNA remove Illumina Stranded Total RNA Library Prep with Ribo-Zero Plus kit (Illumina, #20040529)
 
 ## Sequencing
-### Sequencing library preparation
--Divalent cations을 활용하여 mRNA fragmentation 수행
--First-strand cDNA 합성 SuperScript II reverse transcriptase (Invitrogen, #18064014), random primers 활용
--Second strand cDNA 합성DNA Polymerase I, RNase H, dUTP
--합성된 cDNA fragments로 end repair 진행, single ‘A’ 염기 부착 후 adaptor ligation
--cDNA library 제작을 위한 PCR 수행
-*Sequencing library의 quantification 진행
-KAPA Library Quantification Kits for Illumina Sequencing platforms according to the qPCR Quantification Protocol Guide (KAPA BIOSYSTEMS, #KK4854) 
-*Sequencing library의 QC 진행
-TapeStation D1000 ScreenTape (Agilent Technologies, # 5067-5582) 
+### Sequencing library preparation  
+- Perform mRNA fragmentation using divalent cations.
+- First strand cDNA synthesis using SuperScript II reverse transcriptase (Invitrogen, #18064014) with random primers. 
+- Second strand cDNA synthesis using DNA Polymerase I, RNase H, and dUTP. 
+- Perform end repair on synthesized cDNA fragments, followed by the attachment of a single 'A' base and adaptor ligation.  
+- Perform PCR to create the cDNA library for sequencing.  
+*Progress Sequencing library quantification  
+KAPA Library Quantificatoin kits for Illumina Sequecing platforms according to the qPCR Quantification Protocol Guide (KAPA BIOSYSTEMS, #KK4854)  
+*Conduct quality control (QC) for the sequencing library.  
+TapeStation D1000 ScreenTape (Agilent Technologies, # 5067-5582)     
 
-### Sequencing
--Indexing 된 최종 sequencing library로 Illumina NovaSeq (Illumina) 장비로 single-end (1×150 bp) sequencing 수행함
-
-
-
+### Sequencing  
+- Perform paired-end (2×150 bp) sequencing on an Illumina NovaSeq (Illumina) instrument using the final indexed sequencing library. 
 
 
