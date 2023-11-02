@@ -75,7 +75,7 @@ $ cd bedtools2
 #alignment
 $ bedtools bamtobed –i sample.bam > sample.bed
 $ bedtools coverage –a MAG.CDS.gff –b sample.bed –s > sample.cov
-
+```
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_6_4.png?raw=true" style="width:90%">

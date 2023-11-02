@@ -1,4 +1,4 @@
-#Sequencing
+# Sequencing
 
 ## Biological samples
 - Process 500 µL of RNAlater (Ambion) for every 1 g of fecal sample and store it at -80°C
@@ -47,7 +47,7 @@ Optional; Qubit fluorometer (Thermo Fisher Scientific), Fragment analyzer
 - Treat the column's membrane with 30-50 μL of RNase-free water and centrifuge at 12,000 rpm for 1 minute to obtain RNA.
 
 [Optional: RNA QC]
-- Measure the RNA concentration using a Qubit fluorometer.  
+- Measure the RNA concentration using a Qubit fluorometer*.  
 *A NanoDrop spectrophotometer can also be used, but for accurate concentration measurement, it is recommended to use a Qubit fluorometer.
 - Perform QC of the obtained RNA using a Fragment analyzer.
 

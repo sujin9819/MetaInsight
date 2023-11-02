@@ -1,16 +1,16 @@
 # Metatranscriptomic analysis tools
 - Sequencing reads trimming  
- - FastQC, cutadapt, trimGalore  
+	- FastQC, cutadapt, trimGalore  
 - Alignment  
- - [Bowtie2](https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml)  
+	- [Bowtie2](https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml)  
 - Convert file (file format: sam to cov)  
- - SamTools, bedtools  
+	- SamTools, bedtools  
 - Functional annotation  
- - eggNOG-mapper  
+	- eggNOG-mapper  
 - Visualization  
- -iPATH3, KEGG-mapper, IGV  
+	- iPATH3, KEGG-mapper, IGV  
 - R package  
- - DESeq2, ggplot2, pheatmap  
+	- DESeq2, ggplot2, pheatmap  
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaTranscriptomic/img/T_4_1.png?raw=true" style="width:90%">
