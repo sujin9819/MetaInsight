@@ -1,4 +1,4 @@
-# NGS기반 마이크로바이옴 전사체 분석 SOP
+# NGS기반 마이크로바이옴 메타전사체 분석 SOP
 
 
 ## 메타전사체 (Metatranscriptome) 개요
