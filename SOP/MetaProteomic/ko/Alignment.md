@@ -5,14 +5,6 @@
   <figcaption><b> </b></figcaption>  
 </figure>
 
-
-메타유전체 분석 결과로 얻어진 data를 분석하는 방법 중 메타유전체 분석 결과로 얻어진 de novo assembled contig 및 metagenome-assembled genome (MAG)의 서열에 RNA-seq read들을 mapping하는 방식을 기반으로 하는 “reference-guided analysis” 방법을 먼저 소개하고자 한다. 
-
-<figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_2.png?raw=true" style="width:90%">
-  <figcaption><b> </b></figcaption>  
-</figure>
-
 Pre-processing을 진행하여 sequence quality가 개선된 fastq 파일을 reference 시퀀스*에 mapping하여 alignment를 수행한다. 이때 STAR 프로그램을 이용하여 reference파일을 제작하고 만든 reference서열에 reads를 mapping하게 된다.
 - __*Reference 시퀀스의 종류__
  1. 메타유전체 de novo assembly 파이프라인 분석 결과로 얻어진 final.contig.fa
@@ -48,7 +40,7 @@ IGV 프로그램으로 alignment결과를 확인하려면 메타유전체 de nov
 *gff (General Feature Format) 파일; MAG.fa에 대한 gff 파일 생성은 메타유전체 SOP 참고
 
 <figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_3.png?raw=true" style="width:90%">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_2.png?raw=true" style="width:90%">
   <figcaption><b>IGV 프로그램을 활용한 alignment 결과의 시각화 </b></figcaption>  
 </figure>
 
@@ -83,6 +75,6 @@ $ bedtools coverage –a MAG.CDS.gff –b sample.bed –s > sample.cov
 ```
 
 <figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_4.png?raw=true" style="width:90%">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_3.png?raw=true" style="width:90%">
   <figcaption><b>Read alignment 결과 생성된 bed 파일 (sample.cov) 예시</b></figcaption>  
 </figure>

@@ -26,6 +26,6 @@ $./fastqc
 ```
 
 <figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_0_1.png?raw=true" style="width:90%">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_5_2.png?raw=true" style="width:90%">
   <figcaption><b>FastQC로 raw sequence의 quality check 결과 예시</b></figcaption>  
 </figure>

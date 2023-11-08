@@ -5,13 +5,6 @@
   <figcaption><b> </b></figcaption>  
 </figure>
 
-We would like to introduce the "reference-guided analysis" method, which is based on mapping RNA-seq reads to the sequences of de novo assembled contigs and metagenome-assembled genomes (MAGs) obtained from metagenome analysis. 
-
-<figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_2.png?raw=true" style="width:90%">
-  <figcaption><b> </b></figcaption>  
-</figure>
-
 In this approach, after pre-processing, where fastq files are processed to enhance sequence quality, alignment is performed by mapping the reads to the reference sequences*. The STAR program is utilized to create the reference file and perform the mapping of reads to the generated reference sequences.  
 - **Types of Reference Sequences**
 1.Final.contig.fa obtained from metagenome *de novo* assembly pipeline analysis.
@@ -44,7 +37,7 @@ Additionally, you will require the .bam files containing coverage value informat
 *Note: The creation of a .gff (General Feature Format) file for MAG.fa can be referred to in the metagenome SOP.
 
 <figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_3.png?raw=true" style="width:90%">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_2.png?raw=true" style="width:90%">
   <figcaption><b>Visualization of alignment result using IGV program</b></figcaption>  
 </figure>
 
@@ -78,6 +71,6 @@ $ bedtools coverage –a MAG.CDS.gff –b sample.bed –s > sample.cov
 ```
 
 <figure align = "center">
-  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_4.png?raw=true" style="width:90%">
+  <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_6_3.png?raw=true" style="width:90%">
   <figcaption><b>Example bed file generated as a result of read alignment</b></figcaption>  
 </figure>
