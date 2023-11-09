@@ -29,7 +29,7 @@ $ MEGAHIT -1 kneaddata.trimmed.1.fastq  -2 kneaddata.trimmed.2.fastq  -m 0.5  -t
 $ conda deactivate
 ```
 
-##Lond reads assembly
+## Long reads assembly
 
 ```bash
 # run hifiasm_meta 
@@ -40,7 +40,7 @@ $ conda deactivate
 $ awk '/^S/{print ">"$2;print $3}' test.p_ctg.gfa > test.p_ctg.fa
 ```
 
-`.gfa` stands for graphical fragment assembly, a file format designed to store graph-based assembly information.
+".gfa" stands for graphical fragment assembly, a file format designed to store graph-based assembly information.
 It contains data about the graph generated during the assembly process.
 The structure of the graph file is akin to a de Bruijn graph, illustrating the connectivity of nodes and edges.
 These graphs depict the interactions among overlapping DNA sequences, aiding in the assembly process.

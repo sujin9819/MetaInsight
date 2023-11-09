@@ -22,7 +22,7 @@ $ MEGAHIT -1 kneaddata.trimmed.1.fastq  -2 kneaddata.trimmed.2.fastq  -m 0.5  -t
 $ conda deactivate
 ```
 
-##Lond reads assembly
+## Long reads assembly
 
 ```bash
 # run hifiasm_meta 
@@ -76,13 +76,13 @@ $ conda deactivate
   <figcaption><b>▶report.html 결과 예시</b></figcaption>  
 </figure>
 
-* contigs : assembly 후 생산된 contig의 개수
+- contigs : assembly 후 생산된 contig의 개수  
 - Largest contig : assembly 후 생성된 contig들 중 가장 긴 contig의 길이  
 - Total length : assembly 후 생성된 contig들의 총 base 수  
 - N50 : assembly 후 생성된 contig들 중 상위 50% 길이를 가지는 contig의 길이  
 - N75 : assembly 후 생성된 contig들 중 상위 75% 길이를 가지는 contig의 길이  
 - L50 : assembly 후 생성된 contig 들 중 N50의 길이를 가지는 contig들의 개수  
-- L75 : assembly 후 생성된 contig 들 중 N75의 길이를 가지는 contig 들의 개수  
+- L75 : assembly 후 생성된 contig 들 중 N75의 길이를 가지는 contig들의 개수  
 - Mismatches # N’s : assembly가 되지 않은 uncalled bases 개수  
 - Mismatches # N’s per 100kbp : 100000 base 당 uncalled 된 bases의 개수  
 - Contig 인덱스 증가에 따른 누적 길이를 나타내는 그래프와 contigs의 GC contents를 나타내는 그래프   
