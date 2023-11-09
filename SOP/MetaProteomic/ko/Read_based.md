@@ -31,5 +31,5 @@ HUMAnN분석으로 얻어진 여러 파일(bowtie결과, diamond결과 등)을 �
 
 <figure align = "center">
   <img src="https://github.com/sujin9819/MetaInsight/blob/main/SOP/MetaProteomic/img/P_10_1.png?raw=true" style="width:90%">
-  <figcaption><b>HUMAnN 결과로 도출된pathway 정보의 barplot 시각화 결과 예시</b></figcaption>  
+  <figcaption><b>HUMAnN 결과로 도출된 pathway 정보의 barplot 시각화 결과 예시</b></figcaption>  
 </figure>
