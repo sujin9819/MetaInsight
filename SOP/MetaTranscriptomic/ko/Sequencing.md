@@ -28,7 +28,7 @@ Optional; Qubit fluorometer (Thermo Fisher Scientific), Fragment analyzer
 | Fecal sample | 150mg |
 | 1.0mm zirconia/silica beads | ~20 |
 | Stock solution A | 600 μL |
-<br>
+
 - FastPrep-24™ 6.0m/s 40초 두 번 진행한다.
 - 12,000 rpm에서 3분간 원심분리 후, 상층액 600 μL를 e-tube 로 옮긴다.
 - Proteinase K 15 μL를 처리하고 상온에서 10분 반응시켜준다.
@@ -56,7 +56,7 @@ Optional; Qubit fluorometer (Thermo Fisher Scientific), Fragment analyzer
   <figcaption><b>Fragment analyzer 활용 RNA sample 분석 결과 예시</b></figcaption>  
 </figure>
 
-- 10X TURBO DNase buffer가 1X가 되도록 처리하고, TURBO DNase 1 μL와 RNA에 처리한다
+- 10X TURBO DNase buffer가 1X가 되도록 처리하고, TURBO DNase 1 μL와 RNA에 처리한다/
 - 37℃에 20-30분 반응시켜준다.
 - 0.1배의 DNase inactivation reagent를 처리한다.
 - 상온에서 5분 반응시켜준다
